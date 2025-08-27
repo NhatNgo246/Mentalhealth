@@ -1,0 +1,197 @@
+{
+  "scale": "DASS-21",
+  "options": [
+    {
+      "value": 0,
+      "label": "0 - Khong bao gio"
+    },
+    {
+      "value": 1,
+      "label": "1 - Thinh thoang"
+    },
+    {
+      "value": 2,
+      "label": "2 - Kha thuong xuyen"
+    },
+    {
+      "value": 3,
+      "label": "3 - Hau het/luon luon"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "text": "Toi kho ma thu gian.",
+      "subscale": "Stress"
+    },
+    {
+      "id": 2,
+      "text": "Toi thay mieng kho.",
+      "subscale": "Anxiety"
+    },
+    {
+      "id": 3,
+      "text": "Khong co gi khien toi vui.",
+      "subscale": "Depression"
+    },
+    {
+      "id": 4,
+      "text": "Toi gap van de tho gap (khong do van dong).",
+      "subscale": "Anxiety"
+    },
+    {
+      "id": 5,
+      "text": "Kho chiu vi moi chuyen.",
+      "subscale": "Stress"
+    },
+    {
+      "id": 6,
+      "text": "Toi thay khong co gi mong doi.",
+      "subscale": "Depression"
+    },
+    {
+      "id": 7,
+      "text": "Toi de bon chon, but rut.",
+      "subscale": "Stress"
+    },
+    {
+      "id": 8,
+      "text": "Toi thay minh sap hoang so.",
+      "subscale": "Anxiety"
+    },
+    {
+      "id": 9,
+      "text": "Toi khong con hung thu voi bat cu dieu gi.",
+      "subscale": "Depression"
+    },
+    {
+      "id": 10,
+      "text": "Toi thay minh nhu dang cham lai.",
+      "subscale": "Depression"
+    },
+    {
+      "id": 11,
+      "text": "Toi thay run ray (vi du tay).",
+      "subscale": "Anxiety"
+    },
+    {
+      "id": 12,
+      "text": "Toi de buc boi.",
+      "subscale": "Stress"
+    },
+    {
+      "id": 13,
+      "text": "Toi kho chiu va kho thu gian.",
+      "subscale": "Stress"
+    },
+    {
+      "id": 14,
+      "text": "Toi thay so vo co.",
+      "subscale": "Anxiety"
+    },
+    {
+      "id": 15,
+      "text": "Toi thay cuoc song vo nghia.",
+      "subscale": "Depression"
+    },
+    {
+      "id": 16,
+      "text": "Toi de bi kich dong.",
+      "subscale": "Stress"
+    },
+    {
+      "id": 17,
+      "text": "Toi kho chiu vi hoi hop.",
+      "subscale": "Anxiety"
+    },
+    {
+      "id": 18,
+      "text": "Toi cam thay khong con gia tri.",
+      "subscale": "Depression"
+    },
+    {
+      "id": 19,
+      "text": "Toi de bi cang thang.",
+      "subscale": "Stress"
+    },
+    {
+      "id": 20,
+      "text": "Toi so hai den muc khong co ly do ro rang.",
+      "subscale": "Anxiety"
+    },
+    {
+      "id": 21,
+      "text": "Toi thay buon rau chan nan.",
+      "subscale": "Depression"
+    }
+  ],
+  "severity_thresholds": {
+    "Depression": {
+      "Normal": [
+        0,
+        9
+      ],
+      "Mild": [
+        10,
+        13
+      ],
+      "Moderate": [
+        14,
+        20
+      ],
+      "Severe": [
+        21,
+        27
+      ],
+      "Extremely Severe": [
+        28,
+        42
+      ]
+    },
+    "Anxiety": {
+      "Normal": [
+        0,
+        7
+      ],
+      "Mild": [
+        8,
+        9
+      ],
+      "Moderate": [
+        10,
+        14
+      ],
+      "Severe": [
+        15,
+        19
+      ],
+      "Extremely Severe": [
+        20,
+        42
+      ]
+    },
+    "Stress": {
+      "Normal": [
+        0,
+        14
+      ],
+      "Mild": [
+        15,
+        18
+      ],
+      "Moderate": [
+        19,
+        25
+      ],
+      "Severe": [
+        26,
+        33
+      ],
+      "Extremely Severe": [
+        34,
+        42
+      ]
+    }
+  },
+  "scoring_note": "DASS-21 tong diem moi phan thang duoc nhan he so 2 de tuong duong DASS-42."
+}

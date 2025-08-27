@@ -823,9 +823,30 @@ def create_smart_recommendations(scores: dict):
     recommendations = []
     
     # Analyze scores and provide smart recommendations
-    depression_score = scores.get('Depression', {}).get('adjusted', 0)
-    anxiety_score = scores.get('Anxiety', {}).get('adjusted', 0)
-    stress_score = scores.get('Stress', {}).get('adjusted', 0)
+    # Check if scores values are SubscaleScore objects or dicts
+    if 'Depression' in scores:
+        if hasattr(scores['Depression'], 'adjusted'):
+            depression_score = scores['Depression'].adjusted
+        else:
+            depression_score = scores.get('Depression', {}).get('adjusted', 0)
+    else:
+        depression_score = 0
+        
+    if 'Anxiety' in scores:
+        if hasattr(scores['Anxiety'], 'adjusted'):
+            anxiety_score = scores['Anxiety'].adjusted
+        else:
+            anxiety_score = scores.get('Anxiety', {}).get('adjusted', 0)
+    else:
+        anxiety_score = 0
+        
+    if 'Stress' in scores:
+        if hasattr(scores['Stress'], 'adjusted'):
+            stress_score = scores['Stress'].adjusted
+        else:
+            stress_score = scores.get('Stress', {}).get('adjusted', 0)
+    else:
+        stress_score = 0
     
     if depression_score > 14:
         recommendations.extend([

@@ -3,125 +3,125 @@
   "options": [
     {
       "value": 0,
-      "label": "0 - Khong bao gio"
+      "label": "0 - Không bao giờ"
     },
     {
       "value": 1,
-      "label": "1 - Thinh thoang"
+      "label": "1 - Thỉnh thoảng"
     },
     {
       "value": 2,
-      "label": "2 - Kha thuong xuyen"
+      "label": "2 - Khá thường xuyên"
     },
     {
       "value": 3,
-      "label": "3 - Hau het/luon luon"
+      "label": "3 - Hầu hết/luôn luôn"
     }
   ],
   "items": [
     {
       "id": 1,
-      "text": "Toi kho ma thu gian.",
+      "text": "Tôi khó mà thư giãn.",
       "subscale": "Stress"
     },
     {
       "id": 2,
-      "text": "Toi thay mieng kho.",
+      "text": "Tôi thấy miệng khô.",
       "subscale": "Anxiety"
     },
     {
       "id": 3,
-      "text": "Khong co gi khien toi vui.",
+      "text": "Không có gì khiến tôi vui.",
       "subscale": "Depression"
     },
     {
       "id": 4,
-      "text": "Toi gap van de tho gap (khong do van dong).",
+      "text": "Tôi gặp vấn đề thở gấp (không do vận động).",
       "subscale": "Anxiety"
     },
     {
       "id": 5,
-      "text": "Kho chiu vi moi chuyen.",
+      "text": "Tôi khó chịu vì mọi chuyện.",
       "subscale": "Stress"
     },
     {
       "id": 6,
-      "text": "Toi thay khong co gi mong doi.",
+      "text": "Tôi thấy không có gì mong đợi.",
       "subscale": "Depression"
     },
     {
       "id": 7,
-      "text": "Toi de bon chon, but rut.",
+      "text": "Tôi dễ bồn chồn, bứt rứt.",
       "subscale": "Stress"
     },
     {
       "id": 8,
-      "text": "Toi thay minh sap hoang so.",
+      "text": "Tôi thấy mình sắp hoang sợ.",
       "subscale": "Anxiety"
     },
     {
       "id": 9,
-      "text": "Toi khong con hung thu voi bat cu dieu gi.",
+      "text": "Tôi không còn hứng thú với bất cứ điều gì.",
       "subscale": "Depression"
     },
     {
       "id": 10,
-      "text": "Toi thay minh nhu dang cham lai.",
+      "text": "Tôi thấy mình như đang chậm lại.",
       "subscale": "Depression"
     },
     {
       "id": 11,
-      "text": "Toi thay run ray (vi du tay).",
+      "text": "Tôi thấy run rẩy (ví dụ tay).",
       "subscale": "Anxiety"
     },
     {
       "id": 12,
-      "text": "Toi de buc boi.",
+      "text": "Tôi dễ bực bội.",
       "subscale": "Stress"
     },
     {
       "id": 13,
-      "text": "Toi kho chiu va kho thu gian.",
+      "text": "Tôi khó chịu và khó thư giãn.",
       "subscale": "Stress"
     },
     {
       "id": 14,
-      "text": "Toi thay so vo co.",
+      "text": "Tôi thấy sợ vô cớ.",
       "subscale": "Anxiety"
     },
     {
       "id": 15,
-      "text": "Toi thay cuoc song vo nghia.",
+      "text": "Tôi thấy cuộc sống vô nghĩa.",
       "subscale": "Depression"
     },
     {
       "id": 16,
-      "text": "Toi de bi kich dong.",
+      "text": "Tôi dễ bị kích động.",
       "subscale": "Stress"
     },
     {
       "id": 17,
-      "text": "Toi kho chiu vi hoi hop.",
+      "text": "Tôi khó chịu vì hồi hộp.",
       "subscale": "Anxiety"
     },
     {
       "id": 18,
-      "text": "Toi cam thay khong con gia tri.",
+      "text": "Tôi cảm thấy không còn giá trị.",
       "subscale": "Depression"
     },
     {
       "id": 19,
-      "text": "Toi de bi cang thang.",
+      "text": "Tôi dễ bị căng thẳng.",
       "subscale": "Stress"
     },
     {
       "id": 20,
-      "text": "Toi so hai den muc khong co ly do ro rang.",
+      "text": "Tôi sợ hãi đến mức không có lý do rõ ràng.",
       "subscale": "Anxiety"
     },
     {
       "id": 21,
-      "text": "Toi thay buon rau chan nan.",
+      "text": "Tôi thấy buồn rầu chán nản.",
       "subscale": "Depression"
     }
   ],
@@ -193,5 +193,5 @@
       ]
     }
   },
-  "scoring_note": "DASS-21 tong diem moi phan thang duoc nhan he so 2 de tuong duong DASS-42."
+  "scoring_note": "DASS-21 tổng điểm mỗi phần thang được nhân hệ số 2 để tương đương DASS-42."
 }

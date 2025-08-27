@@ -1,4 +1,4 @@
-# Thong tin va dong thuan
+# Thông tin và đồng thuận
 
-Ung dung nay ho tro sang loc tu danh gia. Khong thu thap danh tinh.
-Bang cach tiep tuc, ban xac nhan da tren 16 tuoi va dong y su dung.
+Ứng dụng này hỗ trợ sàng lọc tự đánh giá. Không thu thập danh tính.
+Bằng cách tiếp tục, bạn xác nhận đã trên 16 tuổi và đồng ý sử dụng.

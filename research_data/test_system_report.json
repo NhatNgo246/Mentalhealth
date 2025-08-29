@@ -1,0 +1,93 @@
+{
+  "system_status": {
+    "overall_status": "degraded",
+    "timestamp": "2025-08-27T20:14:20.725297",
+    "components": {
+      "analytics": {
+        "status": "healthy",
+        "last_check": "2025-08-27T20:14:18.723429",
+        "details": {
+          "data_available": false
+        },
+        "metrics": {
+          "records_loaded": 0
+        }
+      },
+      "database": {
+        "status": "healthy",
+        "last_check": "2025-08-27T20:14:18.727849",
+        "details": {
+          "write_test": true
+        },
+        "metrics": {}
+      },
+      "security": {
+        "status": "healthy",
+        "last_check": "2025-08-27T20:14:18.728113",
+        "details": {
+          "encryption_test": true
+        },
+        "metrics": {}
+      },
+      "collector": {
+        "status": "error",
+        "last_check": "2025-08-27T20:14:18.728122",
+        "details": {
+          "error": "'SafeResearchCollector' object has no attribute 'get_collection_status'"
+        },
+        "metrics": {}
+      },
+      "api": {
+        "status": "offline",
+        "last_check": "2025-08-27T20:14:18.730313",
+        "details": {
+          "error": "HTTPConnectionPool(host='localhost', port=8502): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x75c44164c7d0>: Failed to establish a new connection: [Errno 111] Connection refused'))"
+        },
+        "metrics": {}
+      }
+    },
+    "metrics": {
+      "total_events_processed": 0,
+      "events_per_hour": 0,
+      "error_rate": 0,
+      "last_activity": null
+    },
+    "alerts": [
+      {
+        "severity": "high",
+        "component": "collector",
+        "message": "collector is error",
+        "details": {
+          "error": "'SafeResearchCollector' object has no attribute 'get_collection_status'"
+        }
+      },
+      {
+        "severity": "high",
+        "component": "api",
+        "message": "api is offline",
+        "details": {
+          "error": "HTTPConnectionPool(host='localhost', port=8502): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x75c44164c7d0>: Failed to establish a new connection: [Errno 111] Connection refused'))"
+        }
+      }
+    ]
+  },
+  "analytics_summary": {},
+  "compliance_status": {},
+  "performance_metrics": {
+    "total_events_processed": 0,
+    "events_per_hour": 0,
+    "error_rate": 0,
+    "last_activity": null
+  },
+  "configuration": {
+    "monitoring_interval": 30,
+    "health_check_timeout": 5,
+    "auto_cleanup_enabled": true,
+    "compliance_validation_interval": 3600,
+    "performance_alert_threshold": 100,
+    "max_error_rate": 0.05,
+    "enable_real_time_monitoring": true,
+    "enable_automated_responses": true,
+    "log_level": "INFO"
+  }
+}

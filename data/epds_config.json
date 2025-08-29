@@ -1,0 +1,203 @@
+{
+  "scale": "EPDS",
+  "name": "Edinburgh Postnatal Depression Scale",
+  "name_vi": "Thang đo trầm cảm sau sinh Edinburgh",
+  "description": "Đánh giá trầm cảm ở phụ nữ mang thai và sau sinh",
+  "version": "1.0",
+  "language": "vi",
+  "domains": ["postnatal_depression"],
+  "max_response": 3,
+  "scoring": {
+    "type": "sum",
+    "adjustment_factor": 1,
+    "total_possible": 30
+  },
+  "bands": {
+    "postnatal_depression": [
+      [0, 8, "không có nguy cơ"],
+      [9, 11, "nguy cơ nhẹ"],
+      [12, 13, "nguy cơ vừa phải"],
+      [14, 30, "nguy cơ cao"]
+    ]
+  },
+  "items": [
+    {
+      "id": "EPDS_Q1",
+      "domain": "postnatal_depression",
+      "text": "Tôi có thể cười và nhìn thấy khía cạnh vui vẻ của mọi việc",
+      "reverse": true
+    },
+    {
+      "id": "EPDS_Q2",
+      "domain": "postnatal_depression", 
+      "text": "Tôi mong đợi với niềm vui những điều sắp xảy ra",
+      "reverse": true
+    },
+    {
+      "id": "EPDS_Q3",
+      "domain": "postnatal_depression",
+      "text": "Tôi tự trách bản thân không cần thiết khi có điều gì đó không ổn",
+      "reverse": false
+    },
+    {
+      "id": "EPDS_Q4",
+      "domain": "postnatal_depression",
+      "text": "Tôi lo lắng hoặc bận tâm mà không có lý do rõ ràng",
+      "reverse": false
+    },
+    {
+      "id": "EPDS_Q5",
+      "domain": "postnatal_depression",
+      "text": "Tôi cảm thấy sợ hãi hoặc hoảng loạn mà không có lý do chính đáng",
+      "reverse": false
+    },
+    {
+      "id": "EPDS_Q6",
+      "domain": "postnatal_depression",
+      "text": "Mọi việc trở nên quá sức với tôi",
+      "reverse": false
+    },
+    {
+      "id": "EPDS_Q7",
+      "domain": "postnatal_depression",
+      "text": "Tôi cảm thấy bất hạnh đến mức khó ngủ",
+      "reverse": false
+    },
+    {
+      "id": "EPDS_Q8",
+      "domain": "postnatal_depression",
+      "text": "Tôi cảm thấy buồn bã hoặc đau khổ",
+      "reverse": false
+    },
+    {
+      "id": "EPDS_Q9",
+      "domain": "postnatal_depression",
+      "text": "Tôi cảm thấy bất hạnh đến mức khóc",
+      "reverse": false
+    },
+    {
+      "id": "EPDS_Q10",
+      "domain": "postnatal_depression",
+      "text": "Ý nghĩ tự làm hại bản thân đã xuất hiện trong đầu tôi",
+      "reverse": false,
+      "flag": "self_harm_ideation"
+    }
+  ],
+  "response_options_varied": [
+    {
+      "question": "EPDS_Q1",
+      "options": [
+        {"value": 0, "text": "Giống như tôi luôn làm"},
+        {"value": 1, "text": "Không hoàn toàn như trước"},
+        {"value": 2, "text": "Rõ ràng ít hơn so với trước"},
+        {"value": 3, "text": "Hoàn toàn không"}
+      ]
+    },
+    {
+      "question": "EPDS_Q2", 
+      "options": [
+        {"value": 0, "text": "Giống như tôi luôn làm"},
+        {"value": 1, "text": "Ít hơn so với trước"},
+        {"value": 2, "text": "Rõ ràng ít hơn so với trước"},
+        {"value": 3, "text": "Hầu như không"}
+      ]
+    },
+    {
+      "question": "EPDS_Q3",
+      "options": [
+        {"value": 0, "text": "Không, không bao giờ"},
+        {"value": 1, "text": "Không thường xuyên"},
+        {"value": 2, "text": "Có, thỉnh thoảng"},
+        {"value": 3, "text": "Có, hầu hết thời gian"}
+      ]
+    },
+    {
+      "question": "EPDS_Q4",
+      "options": [
+        {"value": 0, "text": "Không, hoàn toàn không"},
+        {"value": 1, "text": "Hầu như không bao giờ"},
+        {"value": 2, "text": "Có, thỉnh thoảng"},
+        {"value": 3, "text": "Có, rất thường xuyên"}
+      ]
+    },
+    {
+      "question": "EPDS_Q5",
+      "options": [
+        {"value": 0, "text": "Không, hoàn toàn không"},
+        {"value": 1, "text": "Không, không thường"},
+        {"value": 2, "text": "Có, thỉnh thoảng"},
+        {"value": 3, "text": "Có, khá thường xuyên"}
+      ]
+    },
+    {
+      "question": "EPDS_Q6",
+      "options": [
+        {"value": 0, "text": "Không, tôi đối phó tốt như trước"},
+        {"value": 1, "text": "Không, hầu hết thời gian tôi đối phó khá tốt"},
+        {"value": 2, "text": "Có, thỉnh thoảng tôi không đối phó tốt như trước"},
+        {"value": 3, "text": "Có, hầu hết thời gian tôi không thể đối phó"}
+      ]
+    },
+    {
+      "question": "EPDS_Q7",
+      "options": [
+        {"value": 0, "text": "Không, hoàn toàn không"},
+        {"value": 1, "text": "Không thường"},
+        {"value": 2, "text": "Có, thỉnh thoảng"},
+        {"value": 3, "text": "Có, hầu hết thời gian"}
+      ]
+    },
+    {
+      "question": "EPDS_Q8",
+      "options": [
+        {"value": 0, "text": "Không, hoàn toàn không"},
+        {"value": 1, "text": "Không thường"},
+        {"value": 2, "text": "Có, khá thường xuyên"},
+        {"value": 3, "text": "Có, hầu hết thời gian"}
+      ]
+    },
+    {
+      "question": "EPDS_Q9",
+      "options": [
+        {"value": 0, "text": "Không, không bao giờ"},
+        {"value": 1, "text": "Chỉ thỉnh thoảng"},
+        {"value": 2, "text": "Có, khá thường xuyên"},
+        {"value": 3, "text": "Có, hầu hết thời gian"}
+      ]
+    },
+    {
+      "question": "EPDS_Q10",
+      "options": [
+        {"value": 0, "text": "Không bao giờ"},
+        {"value": 1, "text": "Hầu như không bao giờ"},
+        {"value": 2, "text": "Thỉnh thoảng"},
+        {"value": 3, "text": "Có, khá thường xuyên"}
+      ]
+    }
+  ],
+  "interpretation": {
+    "không có nguy cơ": {
+      "description": "Không có dấu hiệu trầm cảm sau sinh",
+      "recommendation": "Duy trì sức khỏe tâm thần tốt, theo dõi định kỳ"
+    },
+    "nguy cơ nhẹ": {
+      "description": "Có thể có nguy cơ trầm cảm sau sinh nhẹ",
+      "recommendation": "Tăng cường chăm sóc bản thân và hỗ trợ xã hội"
+    },
+    "nguy cơ vừa phải": {
+      "description": "Nguy cơ trầm cảm sau sinh vừa phải",
+      "recommendation": "Nên tham khảo ý kiến chuyên gia sức khỏe"
+    },
+    "nguy cơ cao": {
+      "description": "Nguy cơ trầm cảm sau sinh cao",
+      "recommendation": "Cần đánh giá và can thiệp chuyên nghiệp ngay"
+    }
+  },
+  "special_populations": {
+    "pregnant": "Phụ nữ mang thai (từ tuần 28)",
+    "postpartum": "Phụ nữ sau sinh (trong vòng 1 năm)"
+  },
+  "references": [
+    "Cox, J. L., Holden, J. M., & Sagovsky, R. (1987). Detection of postnatal depression: development of the 10-item Edinburgh Postnatal Depression Scale. The British journal of psychiatry, 150(6), 782-786."
+  ]
+}

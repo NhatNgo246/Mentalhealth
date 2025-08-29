@@ -632,3 +632,163 @@ html {
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
+
+/* ================================================= */
+/* MOBILE-FIRST RESPONSIVE DESIGN - 2025 ENHANCED */
+/* ================================================= */
+
+/* Mobile Base (320px+) */
+@media (max-width: 768px) {
+  /* Main container adjustments */
+  .main .block-container {
+    padding: 0.5rem !important;
+    max-width: 100% !important;
+  }
+  
+  /* Touch-friendly interactive elements */
+  .stSelectbox > div > div,
+  .stRadio > div > label,
+  .stButton > button {
+    font-size: 16px !important; /* Prevent iOS zoom */
+    min-height: 44px !important; /* iOS Human Interface Guidelines */
+    padding: 0.75rem !important;
+  }
+  
+  .stButton > button {
+    width: 100% !important;
+    margin: 0.5rem 0 !important;
+  }
+  
+  /* Larger spacing for radio buttons */
+  .stRadio > div {
+    gap: 1rem !important;
+  }
+  
+  .stRadio > div > label {
+    padding: 1rem !important;
+    border-radius: var(--radius-md) !important;
+    background: var(--background-light) !important;
+    border: 2px solid var(--border-color) !important;
+    transition: all var(--transition-normal) !important;
+  }
+  
+  .stRadio > div > label:hover {
+    border-color: var(--primary-color) !important;
+    background: rgba(102, 126, 234, 0.05) !important;
+  }
+  
+  /* Enhanced text readability */
+  .questionnaire-text {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    padding: 1rem !important;
+  }
+  
+  /* Sidebar adjustments for mobile */
+  .css-1d391kg {
+    padding: 1rem 0.5rem !important;
+  }
+  
+  /* Enhanced emergency alert for mobile */
+  .emergency-alert {
+    position: fixed !important;
+    bottom: 1rem !important;
+    right: 1rem !important;
+    left: 1rem !important;
+    z-index: 1000 !important;
+    border-radius: var(--radius-lg) !important;
+    box-shadow: var(--shadow-xl) !important;
+  }
+}
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main .block-container {
+    padding: 1rem !important;
+    max-width: 95% !important;
+  }
+  
+  .stColumns > div {
+    padding: 0 0.5rem !important;
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .main .block-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* ================================================= */
+/* ACCESSIBILITY ENHANCEMENTS */
+/* ================================================= */
+
+/* Large text option */
+.large-text * {
+  font-size: 1.25rem !important;
+  line-height: 1.8 !important;
+}
+
+/* High contrast mode */
+.high-contrast {
+  filter: contrast(1.5) !important;
+}
+
+.high-contrast .stButton > button {
+  border: 3px solid var(--text-primary) !important;
+}
+
+/* Focus indicators for keyboard navigation */
+.stSelectbox > div > div:focus,
+.stRadio > div > label:focus,
+.stButton > button:focus,
+.stTextInput > div > div > input:focus {
+  outline: 3px solid var(--primary-color) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-light: #1f2937;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --border-color: #374151;
+  }
+  
+  .stApp {
+    background-color: var(--background-light) !important;
+    color: var(--text-primary) !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .sidebar { display: none !important; }
+  .stButton { display: none !important; }
+  .emergency-alert { display: none !important; }
+  
+  .main .block-container {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  * {
+    color: black !important;
+    background: white !important;
+  }
+}

@@ -1,0 +1,325 @@
+
+/* SOULFRIEND Mobile Optimization CSS */
+
+/* Base mobile styles */
+@media screen and (max-width: 768px) {
+    .main .block-container {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        max-width: 100%;
+    }
+    
+    /* Mobile header */
+    .mobile-header {
+        position: sticky;
+        top: 0;
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 0.5rem 1rem;
+        z-index: 1000;
+        border-radius: 0 0 10px 10px;
+        margin-bottom: 1rem;
+    }
+    
+    .mobile-header h1 {
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: center;
+    }
+    
+    /* Mobile navigation */
+    .mobile-nav {
+        display: flex;
+        justify-content: space-around;
+        background: #f8f9fa;
+        padding: 0.5rem;
+        border-radius: 10px;
+        margin: 1rem 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .mobile-nav-item {
+        flex: 1;
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .mobile-nav-item:hover {
+        background-color: #e9ecef;
+    }
+    
+    .mobile-nav-item.active {
+        background-color: #667eea;
+        color: white;
+    }
+    
+    /* Mobile questionnaire styles */
+    .mobile-question-card {
+        background: white;
+        border-radius: 15px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        border: none;
+    }
+    
+    .mobile-question-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+    }
+    
+    /* Mobile radio buttons */
+    .mobile-radio-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .mobile-radio-item {
+        display: flex;
+        align-items: center;
+        padding: 0.75rem;
+        border: 2px solid #e9ecef;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+    .mobile-radio-item:hover {
+        border-color: #667eea;
+        background-color: #f8f9ff;
+    }
+    
+    .mobile-radio-item.selected {
+        border-color: #667eea;
+        background-color: #667eea;
+        color: white;
+    }
+    
+    /* Mobile buttons */
+    .mobile-button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+        margin: 0.5rem 0;
+    }
+    
+    .mobile-button-primary {
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        color: white;
+    }
+    
+    .mobile-button-secondary {
+        background: #f8f9fa;
+        color: #6c757d;
+        border: 2px solid #e9ecef;
+    }
+    
+    .mobile-button:active {
+        transform: translateY(1px);
+    }
+    
+    /* Mobile results */
+    .mobile-result-card {
+        background: white;
+        border-radius: 15px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    
+    .mobile-score-circle {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .score-low { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+    .score-mild { background: linear-gradient(135deg, #f39c12, #e67e22); }
+    .score-moderate { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+    .score-severe { background: linear-gradient(135deg, #8e44ad, #71368a); }
+    
+    /* Mobile accessibility */
+    .mobile-accessibility {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1001;
+    }
+    
+    .accessibility-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #667eea;
+        color: white;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        font-size: 1.2rem;
+    }
+    
+    /* Touch-friendly spacing */
+    .touchable {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Mobile typography */
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.3rem; }
+    
+    /* Mobile forms */
+    .mobile-form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .mobile-input {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid #e9ecef;
+        border-radius: 10px;
+        font-size: 1rem;
+        transition: border-color 0.3s;
+    }
+    
+    .mobile-input:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+    
+    /* Mobile progress indicator */
+    .mobile-progress {
+        background: #e9ecef;
+        height: 8px;
+        border-radius: 4px;
+        margin: 1rem 0;
+        overflow: hidden;
+    }
+    
+    .mobile-progress-bar {
+        height: 100%;
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        transition: width 0.3s ease;
+    }
+    
+    /* Mobile modal */
+    .mobile-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 2000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    .mobile-modal-content {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        max-width: 90vw;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
+/* PWA install prompt */
+.pwa-install-prompt {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #667eea;
+    color: white;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+    z-index: 1000;
+}
+
+.pwa-install-prompt.show {
+    transform: translateY(0);
+}
+
+.pwa-install-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pwa-install-text {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.pwa-install-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pwa-install-button {
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pwa-install-button.primary {
+    background: white;
+    color: #667eea;
+}
+
+/* Offline indicator */
+.offline-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    z-index: 1001;
+}
+
+.offline-indicator.show {
+    transform: translateY(0);
+}

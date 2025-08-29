@@ -1,0 +1,234 @@
+{
+  "scale": "GAD-7",
+  "version": "2.0",
+  "description": "Bảng đánh giá Lo âu GAD-7 - Phiên bản Việt Nam nâng cao",
+  "full_name": "Generalized Anxiety Disorder Assessment - 7 items",
+  "target_condition": "Rối loạn lo âu tổng quát",
+  "time_frame": "2 tuần qua",
+  "instructions": {
+    "title": "Hướng dẫn trả lời GAD-7",
+    "content": "Trong 2 tuần qua, bạn đã bị làm phiền bởi các vấn đề sau đây thường xuyên như thế nào?",
+    "time_frame": "2 tuần vừa qua",
+    "tips": [
+      "Hãy nghĩ về 14 ngày gần đây nhất",
+      "Tập trung vào cảm giác lo âu và căng thẳng",
+      "Trả lời dựa trên tần suất thực tế",
+      "Không có câu trả lời đúng hay sai"
+    ]
+  },
+  "options": [
+    {
+      "value": 0,
+      "label": "0 - Không ngày nào",
+      "description": "Hoàn toàn không gặp phải vấn đề này",
+      "emoji": "😌",
+      "frequency": "0 ngày"
+    },
+    {
+      "value": 1,
+      "label": "1 - Vài ngày",
+      "description": "Gặp phải vấn đề này từ 1-6 ngày",
+      "emoji": "😟",
+      "frequency": "1-6 ngày"
+    },
+    {
+      "value": 2,
+      "label": "2 - Hơn nửa số ngày",
+      "description": "Gặp phải vấn đề này từ 7-11 ngày",
+      "emoji": "😰",
+      "frequency": "7-11 ngày"
+    },
+    {
+      "value": 3,
+      "label": "3 - Gần như mỗi ngày",
+      "description": "Gặp phải vấn đề này từ 12-14 ngày",
+      "emoji": "😨",
+      "frequency": "12-14 ngày"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "text": "Cảm thấy lo lắng, bồn chồn hoặc căng thẳng",
+      "category": "General Anxiety",
+      "domain": "Anxiety",
+      "vietnamese_context": "Lo lắng về nhiều vấn đề khác nhau trong cuộc sống",
+      "clinical_significance": "Triệu chứng cốt lõi của lo âu tổng quát",
+      "examples": "Lo về công việc, gia đình, tương lai"
+    },
+    {
+      "id": 2,
+      "text": "Không thể ngăn được hoặc kiểm soát được sự lo lắng",
+      "category": "Worry Control",
+      "domain": "Anxiety",
+      "vietnamese_context": "Mất kiểm soát với các suy nghĩ lo âu",
+      "clinical_significance": "Dấu hiệu quan trọng của GAD",
+      "examples": "Suy nghĩ tiêu cực lặp đi lặp lại, không dừng được"
+    },
+    {
+      "id": 3,
+      "text": "Lo lắng quá mức về nhiều thứ khác nhau",
+      "category": "Excessive Worry",
+      "domain": "Anxiety",
+      "vietnamese_context": "Lo âu quá mức về các vấn đề hàng ngày",
+      "clinical_significance": "Đặc trưng chính của GAD",
+      "examples": "Lo về mọi thứ, từ nhỏ đến lớn"
+    },
+    {
+      "id": 4,
+      "text": "Khó thư giãn",
+      "category": "Relaxation Difficulty",
+      "domain": "Anxiety",
+      "vietnamese_context": "Không thể thả lỏng, luôn trong trạng thái căng thẳng",
+      "clinical_significance": "Triệu chứng thể chất của lo âu",
+      "examples": "Không thể ngồi yên, cảm thấy bồn chồn"
+    },
+    {
+      "id": 5,
+      "text": "Bồn chồn đến mức khó ngồi yên",
+      "category": "Motor Tension",
+      "domain": "Anxiety",
+      "vietnamese_context": "Triệu chứng vận động của lo âu",
+      "clinical_significance": "Biểu hiện thể chất của GAD",
+      "examples": "Không thể ngồi yên, cần di chuyển liên tục"
+    },
+    {
+      "id": 6,
+      "text": "Trở nên dễ bực bội hoặc cáu kỉnh",
+      "category": "Irritability",
+      "domain": "Anxiety",
+      "vietnamese_context": "Dễ nổi giận, mất kiên nhẫn do lo âu",
+      "clinical_significance": "Triệu chứng tâm lý của GAD",
+      "examples": "Nóng tính, khó chịu với mọi người"
+    },
+    {
+      "id": 7,
+      "text": "Cảm thấy sợ hãi như thể điều gì đó khủng khiếp có thể xảy ra",
+      "category": "Fearful Anticipation",
+      "domain": "Anxiety",
+      "vietnamese_context": "Lo sợ về tương lai, dự cảm xấu",
+      "clinical_significance": "Triệu chứng nhận thức của GAD",
+      "examples": "Cảm giác không ổn, sợ sẽ có chuyện xấu"
+    }
+  ],
+  "scoring": {
+    "total_score": {
+      "min": 0,
+      "max": 21,
+      "calculation": "Tổng điểm của 7 câu hỏi"
+    },
+    "severity_levels": {
+      "minimal": {
+        "range": [0, 4],
+        "label": "Tối thiểu",
+        "description": "Không có triệu chứng lo âu đáng kể",
+        "color": "green",
+        "clinical_interpretation": "Không cần can thiệp"
+      },
+      "mild": {
+        "range": [5, 9],
+        "label": "Nhẹ",
+        "description": "Triệu chứng lo âu nhẹ",
+        "color": "yellow",
+        "clinical_interpretation": "Theo dõi, kỹ thuật thư giãn"
+      },
+      "moderate": {
+        "range": [10, 14],
+        "label": "Vừa",
+        "description": "Triệu chứng lo âu vừa phải",
+        "color": "orange",
+        "clinical_interpretation": "Cần tư vấn chuyên nghiệp"
+      },
+      "severe": {
+        "range": [15, 21],
+        "label": "Nặng",
+        "description": "Triệu chứng lo âu nghiêm trọng",
+        "color": "red",
+        "clinical_interpretation": "Cần điều trị chuyên khoa ngay"
+      }
+    }
+  },
+  "recommendations": {
+    "minimal": {
+      "title": "Tình trạng lo âu ổn định",
+      "message": "Bạn không có dấu hiệu lo âu đáng kể. Hãy duy trì lối sống lành mạnh.",
+      "suggestions": [
+        "Duy trì thói quen tập thể dục đều đặn",
+        "Thực hành kỹ thuật thở sâu hàng ngày",
+        "Giữ cân bằng giữa công việc và nghỉ ngơi",
+        "Tránh caffeine và chất kích thích"
+      ],
+      "follow_up": "Không cần theo dõi đặc biệt"
+    },
+    "mild": {
+      "title": "Triệu chứng lo âu nhẹ",
+      "message": "Bạn có một số dấu hiệu lo âu nhẹ. Hãy chú ý đến các kỹ thuật quản lý stress.",
+      "suggestions": [
+        "Học kỹ thuật thở sâu và thiền định",
+        "Tập yoga hoặc stretching hàng ngày",
+        "Giảm thiểu chất kích thích (caffeine, nicotine)",
+        "Tạo thói quen thư giãn trước khi ngủ",
+        "Viết nhật ký cảm xúc"
+      ],
+      "follow_up": "Theo dõi sau 2-3 tuần"
+    },
+    "moderate": {
+      "title": "Triệu chứng lo âu vừa phải",
+      "message": "Bạn đang trải qua lo âu ở mức độ vừa. Nên tìm kiếm sự hỗ trợ chuyên nghiệp.",
+      "suggestions": [
+        "Tư vấn với chuyên gia tâm lý",
+        "Học liệu pháp nhận thức hành vi (CBT)",
+        "Thực hành mindfulness hàng ngày",
+        "Tham gia nhóm hỗ trợ lo âu",
+        "Xem xét kỹ thuật thư giãn cơ tiến bộ"
+      ],
+      "follow_up": "Cần tư vấn chuyên nghiệp trong 1-2 tuần"
+    },
+    "severe": {
+      "title": "Triệu chứng lo âu nghiêm trọng",
+      "message": "Bạn cần được hỗ trợ chuyên khoa ngay lập tức. Lo âu nghiêm trọng có thể ảnh hưởng lớn đến cuộc sống.",
+      "suggestions": [
+        "Liên hệ ngay với bác sĩ tâm thần",
+        "Cân nhắc điều trị thuốc kết hợp liệu pháp",
+        "Tham gia chương trình điều trị chuyên sâu",
+        "Tránh đưa ra quyết định quan trọng",
+        "Đảm bảo có hệ thống hỗ trợ"
+      ],
+      "follow_up": "Cần gặp chuyên gia trong tuần này"
+    }
+  },
+  "emergency_contacts": {
+    "vietnam": {
+      "anxiety_helpline": "1800-1567",
+      "mental_health_crisis": "1900-555-555",
+      "emergency_services": "115",
+      "anxiety_disorders_clinic": "024-3823-3421"
+    },
+    "when_to_call": [
+      "Điểm GAD-7 >= 15",
+      "Cơn hoảng sợ nghiêm trọng",
+      "Không thể thực hiện hoạt động hàng ngày",
+      "Có suy nghĩ tự làm hại bản thân"
+    ]
+  },
+  "clinical_notes": {
+    "administration_time": "3-5 phút",
+    "target_population": "Người lớn (≥18 tuổi)",
+    "screening_tool": true,
+    "diagnostic_tool": false,
+    "note": "GAD-7 là công cụ sàng lọc, không thay thế cho chẩn đoán lâm sàng"
+  },
+  "references": {
+    "original_study": "Spitzer RL, Kroenke K, Williams JB, Löwe B. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med. 2006;166(10):1092-7.",
+    "vietnamese_validation": "Nghiên cứu thích nghi văn hóa Việt Nam 2025",
+    "cutoff_points": "Các điểm cắt dựa trên nghiên cứu quốc tế và thích nghi Việt Nam"
+  },
+  "metadata": {
+    "created_date": "2025-08-27",
+    "version": "2.0",
+    "language": "Vietnamese",
+    "country": "Vietnam",
+    "developer": "SoulFriend Team",
+    "last_updated": "2025-08-27"
+  }
+}

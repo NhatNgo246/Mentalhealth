@@ -1,0 +1,11 @@
+{
+  "apiVersion": "2020-02-02",
+  "type": "Microsoft.Insights/components",
+  "name": "[parameters('appInsightsName')]",
+  "location": "[parameters('location')]",
+  "kind": "web",
+  "properties": {
+    "Application_Type": "web",
+    "RetentionInDays": 90
+  }
+}

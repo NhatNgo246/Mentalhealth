@@ -1,0 +1,4 @@
+{"timestamp": "2025-08-27T20:10:33.660883", "event_type": "compliance_check", "details": {"compliant": false, "gdpr_score": 0.8333333333333334, "vietnam_score": 0.8}, "severity": "LOW"}
+{"timestamp": "2025-08-27T20:13:03.724414", "event_type": "compliance_check", "details": {"compliant": false, "gdpr_score": 0.8333333333333334, "vietnam_score": 0.8}, "severity": "LOW"}
+{"timestamp": "2025-08-27T20:14:18.429131", "event_type": "compliance_check", "details": {"compliant": false, "gdpr_score": 0.8333333333333334, "vietnam_score": 0.8}, "severity": "LOW"}
+{"timestamp": "2025-08-27T20:14:41.340393", "event_type": "compliance_check", "details": {"compliant": false, "gdpr_score": 0.8333333333333334, "vietnam_score": 0.8}, "severity": "LOW"}

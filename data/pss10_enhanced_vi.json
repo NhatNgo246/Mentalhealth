@@ -1,0 +1,288 @@
+{
+  "scale": "PSS-10",
+  "version": "2.0",
+  "description": "Thang đo Căng thẳng Cảm nhận PSS-10 - Phiên bản Việt Nam nâng cao",
+  "full_name": "Perceived Stress Scale - 10 items",
+  "target_condition": "Căng thẳng cảm nhận",
+  "time_frame": "1 tháng qua",
+  "instructions": {
+    "title": "Hướng dẫn trả lời PSS-10",
+    "content": "Các câu hỏi sau đây về cảm xúc và suy nghĩ của bạn trong tháng qua. Hãy cho biết tần suất bạn cảm thấy hoặc nghĩ theo cách đó.",
+    "time_frame": "1 tháng vừa qua",
+    "tips": [
+      "Hãy nghĩ về 30 ngày gần đây nhất",
+      "Tập trung vào cảm nhận chủ quan của bạn về stress",
+      "Không có câu trả lời đúng hay sai",
+      "Trả lời dựa trên cảm giác thực tế của bạn"
+    ]
+  },
+  "options": [
+    {
+      "value": 0,
+      "label": "0 - Không bao giờ",
+      "description": "Hoàn toàn không gặp phải tình trạng này",
+      "emoji": "😌",
+      "frequency": "0 lần"
+    },
+    {
+      "value": 1,
+      "label": "1 - Gần như không bao giờ",
+      "description": "Rất hiếm khi gặp phải",
+      "emoji": "🙂",
+      "frequency": "1-2 lần"
+    },
+    {
+      "value": 2,
+      "label": "2 - Đôi khi",
+      "description": "Thỉnh thoảng gặp phải",
+      "emoji": "😐",
+      "frequency": "Vài lần"
+    },
+    {
+      "value": 3,
+      "label": "3 - Khá thường xuyên",
+      "description": "Thường xuyên gặp phải",
+      "emoji": "😟",
+      "frequency": "Nhiều lần"
+    },
+    {
+      "value": 4,
+      "label": "4 - Rất thường xuyên",
+      "description": "Luôn luôn gặp phải",
+      "emoji": "😰",
+      "frequency": "Hầu như mọi ngày"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy khó chịu vì những điều bất ngờ xảy ra không?",
+      "category": "Unpredictability",
+      "domain": "Stress",
+      "vietnamese_context": "Cảm giác khó chịu khi gặp những tình huống không lường trước",
+      "clinical_significance": "Đo lường khả năng đối phó với sự bất ngờ",
+      "reverse_scored": false,
+      "examples": "Thay đổi kế hoạch đột ngột, tình huống khẩn cấp"
+    },
+    {
+      "id": 2,
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy không thể kiểm soát những điều quan trọng trong cuộc sống không?",
+      "category": "Uncontrollability",
+      "domain": "Stress",
+      "vietnamese_context": "Cảm giác mất kiểm soát cuộc sống",
+      "clinical_significance": "Đo lường cảm giác tự chủ trong cuộc sống",
+      "reverse_scored": false,
+      "examples": "Không thể quyết định công việc, gia đình, tương lai"
+    },
+    {
+      "id": 3,
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy lo lắng và căng thẳng không?",
+      "category": "Nervousness",
+      "domain": "Stress", 
+      "vietnamese_context": "Tình trạng lo lắng và căng thẳng kéo dài",
+      "clinical_significance": "Đo lường mức độ căng thẳng tổng quát",
+      "reverse_scored": false,
+      "examples": "Lo lắng về công việc, gia đình, tương lai"
+    },
+    {
+      "id": 4,
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy tự tin về khả năng xử lý các vấn đề cá nhân không?",
+      "category": "Self-Efficacy",
+      "domain": "Coping",
+      "vietnamese_context": "Niềm tin vào khả năng giải quyết vấn đề của bản thân",
+      "clinical_significance": "Đo lường khả năng đối phó tích cực",
+      "reverse_scored": true,
+      "examples": "Tin tưởng có thể xử lý khó khăn, giải quyết vấn đề"
+    },
+    {
+      "id": 5,
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy mọi việc diễn ra suôn sẻ không?",
+      "category": "Life Satisfaction",
+      "domain": "Coping",
+      "vietnamese_context": "Cảm giác cuộc sống diễn ra thuận lợi",
+      "clinical_significance": "Đo lường sự hài lòng với cuộc sống",
+      "reverse_scored": true,
+      "examples": "Mọi thứ đều ổn, cuộc sống êm đềm"
+    },
+    {
+      "id": 6,
+      "text": "Trong tháng qua, bạn có thường xuyên thấy mình không thể đối phó với tất cả những việc phải làm không?",
+      "category": "Overwhelm",
+      "domain": "Stress",
+      "vietnamese_context": "Cảm giác quá tải với công việc và trách nhiệm",
+      "clinical_significance": "Đo lường mức độ quá tải",
+      "reverse_scored": false,
+      "examples": "Quá nhiều việc, không thể hoàn thành hết"
+    },
+    {
+      "id": 7,
+      "text": "Trong tháng qua, bạn có thường xuyên có thể kiểm soát được sự cáu kỉnh trong cuộc sống không?",
+      "category": "Irritation Control",
+      "domain": "Coping",
+      "vietnamese_context": "Khả năng kiểm soát cảm xúc tiêu cực",
+      "clinical_significance": "Đo lường kỹ năng quản lý cảm xúc",
+      "reverse_scored": true,
+      "examples": "Không để mình nổi giận, kiểm soát được cảm xúc"
+    },
+    {
+      "id": 8,
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy mình đang nắm quyền kiểm soát mọi việc không?",
+      "category": "Control",
+      "domain": "Coping",
+      "vietnamese_context": "Cảm giác kiểm soát được cuộc sống",
+      "clinical_significance": "Đo lường cảm giác tự chủ",
+      "reverse_scored": true,
+      "examples": "Kiểm soát được tình hình, làm chủ cuộc sống"
+    },
+    {
+      "id": 9,
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy tức giận vì những điều nằm ngoài tầm kiểm soát không?",
+      "category": "Anger",
+      "domain": "Stress",
+      "vietnamese_context": "Cảm giác tức giận với những việc không thể kiểm soát",
+      "clinical_significance": "Đo lường phản ứng stress tiêu cực",
+      "reverse_scored": false,
+      "examples": "Tức giận với tình hình kinh tế, chính trị, thời tiết"
+    },
+    {
+      "id": 10,
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy khó khăn đang chồng chất đến mức không thể vượt qua được không?",
+      "category": "Accumulation of Difficulties",
+      "domain": "Stress",
+      "vietnamese_context": "Cảm giác khó khăn chồng chất quá nhiều",
+      "clinical_significance": "Đo lường mức độ stress nghiêm trọng",
+      "reverse_scored": false,
+      "examples": "Vấn đề này chưa xong, vấn đề khác lại xuất hiện"
+    }
+  ],
+  "scoring": {
+    "total_score": {
+      "min": 0,
+      "max": 40,
+      "calculation": "Tổng điểm của 10 câu hỏi (với điều chỉnh reverse scoring)"
+    },
+    "reverse_scoring": {
+      "items": [4, 5, 7, 8],
+      "method": "4 - original_score"
+    },
+    "severity_levels": {
+      "low": {
+        "range": [0, 13],
+        "label": "Thấp",
+        "description": "Mức độ căng thẳng cảm nhận thấp",
+        "color": "green",
+        "clinical_interpretation": "Khả năng đối phó tốt với stress"
+      },
+      "moderate": {
+        "range": [14, 26],
+        "label": "Vừa phải",
+        "description": "Mức độ căng thẳng cảm nhận vừa phải",
+        "color": "yellow",
+        "clinical_interpretation": "Cần cải thiện kỹ năng quản lý stress"
+      },
+      "high": {
+        "range": [27, 40],
+        "label": "Cao",
+        "description": "Mức độ căng thẳng cảm nhận cao",
+        "color": "red",
+        "clinical_interpretation": "Cần hỗ trợ chuyên nghiệp để quản lý stress"
+      }
+    }
+  },
+  "recommendations": {
+    "low": {
+      "title": "Quản lý stress tốt",
+      "message": "Bạn có khả năng đối phó với stress khá tốt. Hãy duy trì những phương pháp hiệu quả này.",
+      "suggestions": [
+        "Tiếp tục duy trì các hoạt động giảm stress hiện tại",
+        "Chia sẻ kinh nghiệm quản lý stress với người khác",
+        "Duy trì lối sống lành mạnh",
+        "Thực hành mindfulness để tăng cường sức khỏe tâm lý",
+        "Xây dựng mạng lưới hỗ trợ xã hội"
+      ],
+      "follow_up": "Theo dõi định kỳ 3-6 tháng"
+    },
+    "moderate": {
+      "title": "Căng thẳng vừa phải",
+      "message": "Bạn đang trải qua mức độ căng thẳng vừa phải. Hãy học thêm kỹ năng quản lý stress.",
+      "suggestions": [
+        "Học kỹ thuật thở sâu và thư giãn cơ tiến bộ",
+        "Thực hành yoga hoặc thiền định",
+        "Cải thiện kỹ năng quản lý thời gian",
+        "Xác định và giảm thiểu nguồn stress",
+        "Tăng cường hoạt động thể chất",
+        "Đảm bảo giấc ngủ chất lượng",
+        "Tham gia hoạt động giải trí"
+      ],
+      "follow_up": "Đánh giá lại sau 4-6 tuần"
+    },
+    "high": {
+      "title": "Căng thẳng cao",
+      "message": "Bạn đang trải qua mức độ căng thẳng cao. Cần tìm kiếm sự hỗ trợ chuyên nghiệp.",
+      "suggestions": [
+        "Tư vấn với chuyên gia tâm lý về quản lý stress",
+        "Cân nhắc liệu pháp nhận thức hành vi (CBT)",
+        "Học kỹ thuật quản lý stress chuyên sâu",
+        "Đánh giá và điều chỉnh lối sống",
+        "Tham gia nhóm hỗ trợ stress",
+        "Cân nhắc thay đổi môi trường làm việc/sống",
+        "Đảm bảo có thời gian nghỉ ngơi đầy đủ"
+      ],
+      "follow_up": "Cần gặp chuyên gia trong 1-2 tuần"
+    }
+  },
+  "stress_management_techniques": {
+    "immediate": [
+      "Kỹ thuật thở 4-7-8",
+      "Thư giãn cơ tiến bộ",
+      "Mindfulness 5 phút",
+      "Nghe nhạc thư giãn"
+    ],
+    "short_term": [
+      "Tập thể dục đều đặn",
+      "Thiền định hàng ngày",
+      "Viết nhật ký",
+      "Hoạt động xã hội tích cực"
+    ],
+    "long_term": [
+      "Xây dựng kỹ năng đối phó",
+      "Cải thiện mối quan hệ",
+      "Phát triển sở thích",
+      "Thiết lập cân bằng công việc-cuộc sống"
+    ]
+  },
+  "emergency_contacts": {
+    "vietnam": {
+      "stress_management_hotline": "1800-1567",
+      "mental_health_crisis": "1900-555-555",
+      "workplace_stress_support": "1900-555-557",
+      "emergency_services": "115"
+    },
+    "when_to_call": [
+      "Điểm PSS-10 >= 30",
+      "Cảm thấy không thể đối phó với cuộc sống",
+      "Có ý định tự làm hại bản thân",
+      "Stress ảnh hưởng nghiêm trọng đến công việc/gia đình"
+    ]
+  },
+  "clinical_notes": {
+    "administration_time": "5-7 phút",
+    "target_population": "Người lớn (≥18 tuổi)",
+    "screening_tool": true,
+    "diagnostic_tool": false,
+    "note": "PSS-10 đo lường stress cảm nhận chủ quan, không phải stress khách quan"
+  },
+  "references": {
+    "original_study": "Cohen S, Williamson G. Perceived stress in a probability sample of the United States. In: Spacapan S, Oskamp S, editors. The social psychology of health. Newbury Park, CA: Sage; 1988.",
+    "vietnamese_validation": "Nghiên cứu thích nghi văn hóa Việt Nam 2025",
+    "cutoff_points": "Điểm cắt được điều chỉnh cho dân số Việt Nam"
+  },
+  "metadata": {
+    "created_date": "2025-08-27",
+    "version": "2.0",
+    "language": "Vietnamese",
+    "country": "Vietnam",
+    "developer": "SoulFriend Team",
+    "last_updated": "2025-08-27"
+  }
+}

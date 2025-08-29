@@ -1,0 +1,54 @@
+SOULFRIEND QUALITY ASSURANCE REPORT
+==================================================
+Timestamp: 2025-08-27 11:29:40.870415
+Total Tests: 43
+Passed: 40
+Failed: 3
+Success Rate: 93.0%
+Duration: 0.71s
+
+DETAILED RESULTS:
+--------------------
+✅ SOULFRIEND.py - TỒN TẠI
+✅ components/ui.py - TỒN TẠI
+✅ components/ui_advanced.py - TỒN TẠI
+✅ components/questionnaires.py - TỒN TẠI
+✅ components/scoring.py - TỒN TẠI
+✅ data/dass21_vi.json - TỒN TẠI
+✅ requirements.txt - TỒN TẠI
+✅ SOULFRIEND.py - SYNTAX ĐÚNG
+✅ Import streamlit - OK
+✅ Import pandas - OK
+✅ Import json - OK
+✅ Import os - OK
+✅ Import time - OK
+✅ Import logging - OK
+✅ Import datetime - OK
+✅ QA: import streamlit - CÓ
+✅ QA: st.set_page_config - CÓ
+✅ QA: Smart UI Experience - CÓ
+✅ QA: Logging setup - CÓ
+✅ QA: DASS-21 questionnaire - CÓ
+✅ QA: Session state - CÓ
+✅ QA UI: Hero section - CÓ
+✅ QA UI: Question cards - CÓ
+✅ QA UI: Results dashboard - CÓ
+✅ QA UI: Progress ring - CÓ
+✅ QA UI: Consent form - CÓ
+✅ QA DATA: Load questionnaire - CÓ
+✅ QA DATA: Score calculation - CÓ
+✅ QA DATA: State validation - CÓ
+✅ QA DATA: Session management - CÓ
+❌ QA DATA: User responses - THIẾU
+✅ QC DEPLOY: SOULFRIEND.py exists - OK
+✅ QC DEPLOY: Components folder - OK
+✅ QC DEPLOY: Data folder - OK
+✅ QC DEPLOY: Requirements file - OK
+✅ QC DEPLOY: Launch script - OK
+✅ QC SECURITY: No hardcoded secrets - OK
+❌ QC SECURITY: Safe file operations - CẢNH BÁO
+✅ QC SECURITY: Input validation - OK
+❌ QC SECURITY: Error handling - CẢNH BÁO
+✅ QC SECURITY: Logging enabled - OK
+✅ QC PERF: File size 0.02MB - OK
+✅ QC PERF: 443 lines - OK

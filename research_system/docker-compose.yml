@@ -1,0 +1,54 @@
+# Docker Compose for Research System (Optional)
+# Chạy riêng biệt, không ảnh hưởng đến SOULFRIEND chính
+
+version: '3.8'
+
+services:
+  research-collector:
+    build:
+      context: .
+      dockerfile: research_system/Dockerfile
+    ports:
+      - "8502:8502"  # Port riêng cho research API
+    environment:
+      - ENABLE_RESEARCH_COLLECTION=true
+      - RESEARCH_SECRET=your_secret_key_here
+      - PSEUDO_SECRET=your_pseudo_key_here
+      - RESEARCH_PORT=8502
+    volumes:
+      - ./research_data:/app/research_data
+      - ./logs:/app/logs
+    restart: unless-stopped
+    networks:
+      - research-network
+
+  research-db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=research_db
+      - POSTGRES_USER=research_user
+      - POSTGRES_PASSWORD=research_password
+    volumes:
+      - research_db_data:/var/lib/postgresql/data
+      - ./research_system/sql:/docker-entrypoint-initdb.d
+    ports:
+      - "5433:5432"  # Port riêng cho research DB
+    networks:
+      - research-network
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6380:6379"  # Port riêng cho research Redis
+    volumes:
+      - redis_data:/data
+    networks:
+      - research-network
+
+volumes:
+  research_db_data:
+  redis_data:
+
+networks:
+  research-network:
+    driver: bridge

@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-08-27T20:13:03.250793",
+  "tests_performed": [
+    "analytics",
+    "security",
+    "monitoring"
+  ],
+  "passed": 3,
+  "failed": 3,
+  "details": {
+    "analytics": "PASS",
+    "database": "FAIL: near \"INDEX\": syntax error",
+    "security": "PASS",
+    "manager": "FAIL: near \"INDEX\": syntax error",
+    "integration": "FAIL: safe_track_questionnaire_start() got an unexpected keyword argument 'test_mode'",
+    "monitoring": "PASS"
+  }
+}

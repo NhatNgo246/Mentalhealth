@@ -1,0 +1,66 @@
+{
+  "admin_users": {
+    "admin": {
+      "password_hash": "c64f2d4fabe30f3d9ba0e5802f33f33e484311ac3738cb96fc97ff9cf06af4f9",
+      "role": "super_admin",
+      "created": "2025-08-27T19:23:31.545075",
+      "last_login": "2025-08-28T07:15:40.135899",
+      "failed_attempts": 0,
+      "locked_until": null,
+      "permissions": [
+        "all"
+      ]
+    },
+    "doctor": {
+      "password_hash": "81e597e5d590cb735719011ab7878a541b2ebacbbaaabfb3fa04096b917130e8",
+      "role": "medical_admin",
+      "created": "2025-08-27T19:23:31.595302",
+      "last_login": null,
+      "failed_attempts": 0,
+      "locked_until": null,
+      "permissions": [
+        "view_users",
+        "view_reports",
+        "manage_assessments"
+      ]
+    },
+    "analyst": {
+      "password_hash": "6aac79b1df02ae23e7516a66254fed4b3f29e9f4692ebaab36d1f9bb03d55903",
+      "role": "data_analyst",
+      "created": "2025-08-27T19:23:31.655166",
+      "last_login": null,
+      "failed_attempts": 0,
+      "locked_until": null,
+      "permissions": [
+        "view_reports",
+        "view_analytics",
+        "export_data"
+      ]
+    }
+  },
+  "security_settings": {
+    "session_timeout": 3600,
+    "max_login_attempts": 3,
+    "lockout_duration": 900,
+    "require_2fa": false,
+    "password_expiry_days": 90
+  },
+  "audit_log": [
+    {
+      "timestamp": "2025-08-27T19:24:19.407786",
+      "event_type": "login_success",
+      "username": "admin",
+      "details": "Successful login",
+      "ip_address": "localhost",
+      "user_agent": "Streamlit"
+    },
+    {
+      "timestamp": "2025-08-28T07:15:40.139630",
+      "event_type": "login_success",
+      "username": "admin",
+      "details": "Successful login",
+      "ip_address": "localhost",
+      "user_agent": "Streamlit"
+    }
+  ]
+}

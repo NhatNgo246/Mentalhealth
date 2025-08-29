@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-08-27T12:50:24.236302",
+  "pipeline_results": {
+    "tester": {
+      "status": "failed",
+      "score": 65
+    },
+    "qa": {
+      "status": "failed",
+      "score": 70
+    },
+    "qc": {
+      "status": "failed",
+      "score": 75
+    },
+    "overall": {
+      "status": "acceptable",
+      "score": 70.0
+    }
+  },
+  "summary": {
+    "overall_score": 70.0,
+    "status": "acceptable",
+    "recommendation": "needs_improvement"
+  }
+}

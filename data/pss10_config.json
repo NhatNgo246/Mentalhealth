@@ -1,0 +1,128 @@
+{
+  "scale": "PSS-10",
+  "name": "Perceived Stress Scale-10",
+  "name_vi": "Thang đo căng thẳng cảm nhận PSS-10",
+  "description": "Đánh giá mức độ căng thẳng cảm nhận trong tháng qua",
+  "version": "1.0",
+  "language": "vi",
+  "domains": ["perceived_stress"],
+  "max_response": 4,
+  "scoring": {
+    "type": "sum",
+    "adjustment_factor": 1,
+    "total_possible": 40
+  },
+  "bands": {
+    "perceived_stress": [
+      [0, 13, "thấp"],
+      [14, 26, "vừa phải"],
+      [27, 40, "cao"]
+    ]
+  },
+  "items": [
+    {
+      "id": "PSS10_Q1",
+      "domain": "perceived_stress",
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy khó chịu vì những điều bất ngờ xảy ra không?",
+      "reverse": false
+    },
+    {
+      "id": "PSS10_Q2",
+      "domain": "perceived_stress",
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy không thể kiểm soát những điều quan trọng trong cuộc sống không?",
+      "reverse": false
+    },
+    {
+      "id": "PSS10_Q3",
+      "domain": "perceived_stress",
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy lo lắng và căng thẳng không?",
+      "reverse": false
+    },
+    {
+      "id": "PSS10_Q4",
+      "domain": "perceived_stress",
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy tự tin về khả năng xử lý các vấn đề cá nhân không?",
+      "reverse": true
+    },
+    {
+      "id": "PSS10_Q5",
+      "domain": "perceived_stress",
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy mọi thứ đang diễn ra theo ý muốn không?",
+      "reverse": true
+    },
+    {
+      "id": "PSS10_Q6",
+      "domain": "perceived_stress",
+      "text": "Trong tháng qua, bạn có thường xuyên thấy không thể đối phó với tất cả những việc phải làm không?",
+      "reverse": false
+    },
+    {
+      "id": "PSS10_Q7",
+      "domain": "perceived_stress",
+      "text": "Trong tháng qua, bạn có thường xuyên có thể kiểm soát sự khó chịu trong cuộc sống không?",
+      "reverse": true
+    },
+    {
+      "id": "PSS10_Q8",
+      "domain": "perceived_stress",
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy mình đang làm chủ tình hình không?",
+      "reverse": true
+    },
+    {
+      "id": "PSS10_Q9",
+      "domain": "perceived_stress",
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy tức giận vì những việc nằm ngoài tầm kiểm soát không?",
+      "reverse": false
+    },
+    {
+      "id": "PSS10_Q10",
+      "domain": "perceived_stress",
+      "text": "Trong tháng qua, bạn có thường xuyên cảm thấy khó khăn chồng chất đến mức không thể vượt qua không?",
+      "reverse": false
+    }
+  ],
+  "response_options": [
+    {
+      "value": 0,
+      "text": "Không bao giờ",
+      "text_en": "Never"
+    },
+    {
+      "value": 1,
+      "text": "Hầu như không bao giờ",
+      "text_en": "Almost never"
+    },
+    {
+      "value": 2,
+      "text": "Thỉnh thoảng",
+      "text_en": "Sometimes"
+    },
+    {
+      "value": 3,
+      "text": "Khá thường xuyên",
+      "text_en": "Fairly often"
+    },
+    {
+      "value": 4,
+      "text": "Rất thường xuyên",
+      "text_en": "Very often"
+    }
+  ],
+  "interpretation": {
+    "thấp": {
+      "description": "Mức căng thẳng cảm nhận thấp",
+      "recommendation": "Duy trì các chiến lược đối phó hiệu quả hiện tại"
+    },
+    "vừa phải": {
+      "description": "Mức căng thẳng cảm nhận vừa phải",
+      "recommendation": "Học thêm kỹ thuật quản lý căng thẳng và tự chăm sóc"
+    },
+    "cao": {
+      "description": "Mức căng thẳng cảm nhận cao",
+      "recommendation": "Cần hỗ trợ chuyên nghiệp và can thiệp quản lý căng thẳng"
+    }
+  },
+  "references": [
+    "Cohen, S., Kamarck, T., & Mermelstein, R. (1983). A global measure of perceived stress. Journal of health and social behavior, 385-396."
+  ]
+}

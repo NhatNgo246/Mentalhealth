@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-08-27T20:10:33.046835",
+  "tests_performed": [
+    "analytics",
+    "security",
+    "monitoring"
+  ],
+  "passed": 3,
+  "failed": 3,
+  "details": {
+    "analytics": "PASS",
+    "database": "FAIL: No module named 'asyncpg'",
+    "security": "PASS",
+    "manager": "FAIL: No module named 'asyncpg'",
+    "integration": "FAIL: cannot import name 'safe_track_questionnaire_completion' from 'research_system.integration' (/workspaces/Mentalhealth/research_system/integration.py)",
+    "monitoring": "PASS"
+  }
+}

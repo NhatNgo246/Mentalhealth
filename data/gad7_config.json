@@ -1,0 +1,110 @@
+{
+  "scale": "GAD-7",
+  "name": "Generalized Anxiety Disorder 7-item",
+  "name_vi": "Bộ câu hỏi rối loạn lo âu tổng quát GAD-7",
+  "description": "Đánh giá mức độ lo âu trong 2 tuần qua",
+  "version": "1.0",
+  "language": "vi",
+  "domains": ["anxiety"],
+  "max_response": 3,
+  "scoring": {
+    "type": "sum",
+    "adjustment_factor": 1,
+    "total_possible": 21
+  },
+  "bands": {
+    "anxiety": [
+      [0, 4, "tối thiểu"],
+      [5, 9, "nhẹ"],
+      [10, 14, "vừa phải"],
+      [15, 21, "nặng"]
+    ]
+  },
+  "items": [
+    {
+      "id": "GAD7_Q1",
+      "domain": "anxiety",
+      "text": "Cảm thấy lo lắng, bồn chồn hoặc căng thẳng",
+      "reverse": false
+    },
+    {
+      "id": "GAD7_Q2",
+      "domain": "anxiety",
+      "text": "Không thể ngăn chặn hoặc kiểm soát sự lo lắng",
+      "reverse": false
+    },
+    {
+      "id": "GAD7_Q3",
+      "domain": "anxiety",
+      "text": "Lo lắng quá mức về nhiều thứ khác nhau",
+      "reverse": false
+    },
+    {
+      "id": "GAD7_Q4",
+      "domain": "anxiety",
+      "text": "Khó thư giãn",
+      "reverse": false
+    },
+    {
+      "id": "GAD7_Q5",
+      "domain": "anxiety",
+      "text": "Bồn chồn đến mức khó ngồi yên",
+      "reverse": false
+    },
+    {
+      "id": "GAD7_Q6",
+      "domain": "anxiety",
+      "text": "Dễ cáu kỉnh hoặc khó chịu",
+      "reverse": false
+    },
+    {
+      "id": "GAD7_Q7",
+      "domain": "anxiety",
+      "text": "Cảm thấy sợ hãi như thể điều gì đó khủng khiếp có thể xảy ra",
+      "reverse": false
+    }
+  ],
+  "response_options": [
+    {
+      "value": 0,
+      "text": "Không bao giờ",
+      "text_en": "Not at all"
+    },
+    {
+      "value": 1,
+      "text": "Một vài ngày",
+      "text_en": "Several days"
+    },
+    {
+      "value": 2,
+      "text": "Hơn một nửa số ngày",
+      "text_en": "More than half the days"
+    },
+    {
+      "value": 3,
+      "text": "Gần như mọi ngày",
+      "text_en": "Nearly every day"
+    }
+  ],
+  "interpretation": {
+    "tối thiểu": {
+      "description": "Triệu chứng lo âu tối thiểu",
+      "recommendation": "Theo dõi và duy trì thói quen tích cực"
+    },
+    "nhẹ": {
+      "description": "Triệu chứng lo âu nhẹ",
+      "recommendation": "Thực hiện kỹ thuật thư giãn và quản lý căng thẳng"
+    },
+    "vừa phải": {
+      "description": "Triệu chứng lo âu vừa phải",
+      "recommendation": "Nên tham khảo ý kiến chuyên gia tâm lý"
+    },
+    "nặng": {
+      "description": "Triệu chứng lo âu nặng",
+      "recommendation": "Cần tham khảo ý kiến bác sĩ tâm thần ngay"
+    }
+  },
+  "references": [
+    "Spitzer, R. L., Kroenke, K., Williams, J. B., & Löwe, B. (2006). A brief measure for assessing generalized anxiety disorder: the GAD-7. Archives of internal medicine, 166(10), 1092-1097."
+  ]
+}

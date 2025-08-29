@@ -1,0 +1,533 @@
+{
+  "scale": "EPDS",
+  "version": "2.0",
+  "description": "Thang đo Trầm cảm sau sinh Edinburgh - Phiên bản Việt Nam nâng cao",
+  "full_name": "Edinburgh Postnatal Depression Scale",
+  "target_condition": "Trầm cảm sau sinh và trong thai kỳ",
+  "time_frame": "7 ngày qua",
+  "instructions": {
+    "title": "Hướng dẫn trả lời EPDS",
+    "content": "Các câu hỏi dưới đây nói về cảm xúc của bạn trong 7 ngày qua. Hãy chọn câu trả lời gần nhất với cảm nhận của bạn.",
+    "time_frame": "7 ngày vừa qua",
+    "tips": [
+      "Hãy nghĩ về tuần vừa qua",
+      "Tập trung vào cảm xúc thực tế của bạn",
+      "Không có câu trả lời đúng hay sai",
+      "Thông tin này sẽ giúp hiểu rõ tình trạng của bạn"
+    ],
+    "target_group": "Phụ nữ mang thai và sau sinh"
+  },
+  "items": [
+    {
+      "id": 1,
+      "text": "Tôi có thể cười và nhìn thấy khía cạnh vui vẻ của mọi việc",
+      "category": "Anhedonia",
+      "domain": "Mood",
+      "vietnamese_context": "Khả năng tìm thấy niềm vui trong cuộc sống hàng ngày",
+      "clinical_significance": "Dấu hiệu quan trọng của trầm cảm",
+      "reverse_scored": true,
+      "options": [
+        {
+          "value": 0,
+          "label": "Như trước đây",
+          "description": "Vẫn có thể cười và thấy vui như bình thường",
+          "emoji": "😊"
+        },
+        {
+          "value": 1,
+          "label": "Không nhiều như trước",
+          "description": "Ít cười và ít thấy vui hơn trước",
+          "emoji": "🙂"
+        },
+        {
+          "value": 2,
+          "label": "Chắc chắn không nhiều như trước",
+          "description": "Rõ ràng ít cười và ít vui hơn nhiều",
+          "emoji": "😐"
+        },
+        {
+          "value": 3,
+          "label": "Hoàn toàn không còn",
+          "description": "Không thể cười hoặc thấy vui nữa",
+          "emoji": "😔"
+        }
+      ],
+      "examples": "Cười khi xem phim hài, thấy vui với những chuyện nhỏ"
+    },
+    {
+      "id": 2,
+      "text": "Tôi mong đợi những điều tốt đẹp với niềm vui",
+      "category": "Anticipatory Pleasure",
+      "domain": "Mood", 
+      "vietnamese_context": "Khả năng háo hức và mong đợi những điều tích cực",
+      "clinical_significance": "Triệu chứng cốt lõi của trầm cảm",
+      "reverse_scored": true,
+      "options": [
+        {
+          "value": 0,
+          "label": "Như trước đây",
+          "description": "Vẫn háo hức mong đợi như bình thường",
+          "emoji": "😊"
+        },
+        {
+          "value": 1,
+          "label": "Ít hơn trước",
+          "description": "Ít háo hức hơn trước đây",
+          "emoji": "🙂"
+        },
+        {
+          "value": 2,
+          "label": "Chắc chắn ít hơn trước",
+          "description": "Rõ ràng ít mong đợi hơn nhiều",
+          "emoji": "😐"
+        },
+        {
+          "value": 3,
+          "label": "Gần như không còn",
+          "description": "Không còn mong đợi gì tích cực",
+          "emoji": "😔"
+        }
+      ],
+      "examples": "Mong đợi cuối tuần, háo hức gặp bạn bè"
+    },
+    {
+      "id": 3,
+      "text": "Tôi tự trách mình một cách không cần thiết khi mọi việc không ổn",
+      "category": "Self-Blame",
+      "domain": "Cognitive",
+      "vietnamese_context": "Xu hướng tự đổ lỗi cho bản thân",
+      "clinical_significance": "Triệu chứng nhận thức tiêu cực",
+      "reverse_scored": false,
+      "options": [
+        {
+          "value": 3,
+          "label": "Có, hầu hết thời gian",
+          "description": "Luôn tự trách mình khi có vấn đề",
+          "emoji": "😰"
+        },
+        {
+          "value": 2,
+          "label": "Có, đôi khi",
+          "description": "Thỉnh thoảng tự trách mình",
+          "emoji": "😟"
+        },
+        {
+          "value": 1,
+          "label": "Không thường xuyên",
+          "description": "Hiếm khi tự trách mình",
+          "emoji": "🙂"
+        },
+        {
+          "value": 0,
+          "label": "Không, không bao giờ",
+          "description": "Không tự trách mình vô lý",
+          "emoji": "😊"
+        }
+      ],
+      "examples": "Tự trách khi con khóc, khi việc nhà không hoàn hảo"
+    },
+    {
+      "id": 4,
+      "text": "Tôi lo lắng và bồn chồn vô lý",
+      "category": "Anxiety",
+      "domain": "Anxiety",
+      "vietnamese_context": "Cảm giác lo âu và bồn chồn không có lý do rõ ràng",
+      "clinical_significance": "Triệu chứng lo âu trong trầm cảm sau sinh",
+      "reverse_scored": false,
+      "options": [
+        {
+          "value": 0,
+          "label": "Không, hoàn toàn không",
+          "description": "Không có cảm giác lo lắng vô lý",
+          "emoji": "😌"
+        },
+        {
+          "value": 1,
+          "label": "Hiếm khi",
+          "description": "Thỉnh thoảng có cảm giác lo lắng nhẹ",
+          "emoji": "🙂"
+        },
+        {
+          "value": 2,
+          "label": "Có, đôi khi",
+          "description": "Thường xuyên lo lắng không có lý do",
+          "emoji": "😟"
+        },
+        {
+          "value": 3,
+          "label": "Có, rất thường xuyên",
+          "description": "Luôn trong trạng thái lo lắng bồn chồn",
+          "emoji": "😰"
+        }
+      ],
+      "examples": "Lo lắng về mọi thứ xung quanh con, lo không có lý do cụ thể"
+    },
+    {
+      "id": 5,
+      "text": "Tôi cảm thấy sợ hãi hoặc hoảng loạn vô lý",
+      "category": "Fear/Panic",
+      "domain": "Anxiety",
+      "vietnamese_context": "Cảm giác sợ hãi hoặc hoảng sợ đột ngột",
+      "clinical_significance": "Triệu chứng anxiety nghiêm trọng",
+      "reverse_scored": false,
+      "options": [
+        {
+          "value": 3,
+          "label": "Có, rất thường xuyên",
+          "description": "Thường xuyên cảm thấy sợ hãi hoảng loạn",
+          "emoji": "😨"
+        },
+        {
+          "value": 2,
+          "label": "Có, đôi khi",
+          "description": "Thỉnh thoảng có cảm giác sợ hãi",
+          "emoji": "😟"
+        },
+        {
+          "value": 1,
+          "label": "Không, không thường xuyên",
+          "description": "Hiếm khi cảm thấy sợ hãi",
+          "emoji": "🙂"
+        },
+        {
+          "value": 0,
+          "label": "Không, hoàn toàn không",
+          "description": "Không có cảm giác sợ hãi vô lý",
+          "emoji": "😌"
+        }
+      ],
+      "examples": "Đột nhiên sợ hãi khi chăm con, cảm giác hoảng loạn không rõ nguyên nhân"
+    },
+    {
+      "id": 6,
+      "text": "Mọi việc đè nặng lên tôi",
+      "category": "Overwhelm",
+      "domain": "Stress",
+      "vietnamese_context": "Cảm giác quá tải, không thể đối phó với cuộc sống",
+      "clinical_significance": "Dấu hiệu stress và trầm cảm",
+      "reverse_scored": false,
+      "options": [
+        {
+          "value": 3,
+          "label": "Có, hầu hết thời gian tôi không thể đối phó được",
+          "description": "Luôn cảm thấy quá tải, không đối phó nổi",
+          "emoji": "😵"
+        },
+        {
+          "value": 2,
+          "label": "Có, đôi khi tôi không đối phó được như trước",
+          "description": "Thỉnh thoảng cảm thấy quá tải",
+          "emoji": "😓"
+        },
+        {
+          "value": 1,
+          "label": "Không, hầu hết thời gian tôi đối phó được tốt",
+          "description": "Đa số thời gian vẫn đối phó được",
+          "emoji": "🙂"
+        },
+        {
+          "value": 0,
+          "label": "Không, tôi đối phó được như trước",
+          "description": "Vẫn đối phó tốt như bình thường",
+          "emoji": "😊"
+        }
+      ],
+      "examples": "Cảm thấy không thể đối phó với việc chăm con và việc nhà"
+    },
+    {
+      "id": 7,
+      "text": "Tôi buồn bã đến mức ngủ không được",
+      "category": "Sleep Disturbance",
+      "domain": "Neurovegetative", 
+      "vietnamese_context": "Mất ngủ do tâm trạng buồn bã",
+      "clinical_significance": "Triệu chứng thể chất của trầm cảm",
+      "reverse_scored": false,
+      "options": [
+        {
+          "value": 3,
+          "label": "Có, hầu hết thời gian",
+          "description": "Thường xuyên mất ngủ vì buồn bã",
+          "emoji": "😴"
+        },
+        {
+          "value": 2,
+          "label": "Có, đôi khi",
+          "description": "Thỉnh thoảng mất ngủ vì tâm trạng",
+          "emoji": "😪"
+        },
+        {
+          "value": 1,
+          "label": "Không thường xuyên",
+          "description": "Hiếm khi bị ảnh hưởng giấc ngủ",
+          "emoji": "🙂"
+        },
+        {
+          "value": 0,
+          "label": "Không, hoàn toàn không",
+          "description": "Giấc ngủ không bị ảnh hưởng",
+          "emoji": "😌"
+        }
+      ],
+      "examples": "Thức đêm vì suy nghĩ tiêu cực, không ngủ được vì buồn"
+    },
+    {
+      "id": 8,
+      "text": "Tôi cảm thấy buồn bã hoặc khổ sở",
+      "category": "Sadness",
+      "domain": "Mood",
+      "vietnamese_context": "Tâm trạng buồn bã, khổ sở kéo dài",
+      "clinical_significance": "Triệu chứng cốt lõi của trầm cảm",
+      "reverse_scored": false,
+      "options": [
+        {
+          "value": 3,
+          "label": "Có, hầu hết thời gian",
+          "description": "Luôn cảm thấy buồn bã khổ sở",
+          "emoji": "😭"
+        },
+        {
+          "value": 2,
+          "label": "Có, khá thường xuyên",
+          "description": "Thường xuyên buồn bã",
+          "emoji": "😢"
+        },
+        {
+          "value": 1,
+          "label": "Không thường xuyên",
+          "description": "Thỉnh thoảng buồn bã",
+          "emoji": "🙂"
+        },
+        {
+          "value": 0,
+          "label": "Không, hoàn toàn không",
+          "description": "Không có cảm giác buồn bã",
+          "emoji": "😊"
+        }
+      ],
+      "examples": "Buồn bã kéo dài, cảm thấy khổ sở với cuộc sống"
+    },
+    {
+      "id": 9,
+      "text": "Tôi buồn bã đến mức đã khóc",
+      "category": "Tearfulness",
+      "domain": "Mood",
+      "vietnamese_context": "Khóc do tâm trạng buồn bã",
+      "clinical_significance": "Biểu hiện cảm xúc của trầm cảm",
+      "reverse_scored": false,
+      "options": [
+        {
+          "value": 3,
+          "label": "Có, hầu hết thời gian",
+          "description": "Thường xuyên khóc vì buồn bã",
+          "emoji": "😭"
+        },
+        {
+          "value": 2,
+          "label": "Có, khá thường xuyên",
+          "description": "Khá thường xuyên khóc",
+          "emoji": "😢"
+        },
+        {
+          "value": 1,
+          "label": "Chỉ thỉnh thoảng",
+          "description": "Thỉnh thoảng khóc",
+          "emoji": "🥺"
+        },
+        {
+          "value": 0,
+          "label": "Không, không bao giờ",
+          "description": "Không khóc vì buồn bã",
+          "emoji": "🙂"
+        }
+      ],
+      "examples": "Khóc không kiểm soát được, khóc vì những chuyện nhỏ"
+    },
+    {
+      "id": 10,
+      "text": "Ý nghĩ làm hại bản thân đã xuất hiện trong đầu tôi",
+      "category": "Self-Harm Ideation",
+      "domain": "Safety",
+      "vietnamese_context": "Ý tưởng tự làm hại bản thân",
+      "clinical_significance": "Triệu chứng nghiêm trọng cần can thiệp ngay",
+      "reverse_scored": false,
+      "warning": "Đây là triệu chứng nghiêm trọng cần được can thiệp y tế ngay lập tức",
+      "options": [
+        {
+          "value": 3,
+          "label": "Có, khá thường xuyên",
+          "description": "Thường xuyên có ý nghĩ tự làm hại",
+          "emoji": "🆘"
+        },
+        {
+          "value": 2,
+          "label": "Có, đôi khi",
+          "description": "Thỉnh thoảng có ý nghĩ tự làm hại",
+          "emoji": "⚠️"
+        },
+        {
+          "value": 1,
+          "label": "Hiếm khi",
+          "description": "Hiếm khi có ý nghĩ tự làm hại",
+          "emoji": "😟"
+        },
+        {
+          "value": 0,
+          "label": "Không, không bao giờ",
+          "description": "Không có ý nghĩ tự làm hại",
+          "emoji": "😌"
+        }
+      ],
+      "examples": "Nghĩ đến việc tự làm hại bản thân, ý tưởng nguy hiểm"
+    }
+  ],
+  "scoring": {
+    "total_score": {
+      "min": 0,
+      "max": 30,
+      "calculation": "Tổng điểm của 10 câu hỏi"
+    },
+    "severity_levels": {
+      "no_risk": {
+        "range": [0, 8],
+        "label": "Không có nguy cơ",
+        "description": "Không có dấu hiệu trầm cảm sau sinh",
+        "color": "green",
+        "clinical_interpretation": "Tình trạng tâm lý ổn định"
+      },
+      "mild_risk": {
+        "range": [9, 11],
+        "label": "Nguy cơ nhẹ",
+        "description": "Có một số dấu hiệu trầm cảm nhẹ",
+        "color": "yellow",
+        "clinical_interpretation": "Cần theo dõi và hỗ trợ"
+      },
+      "moderate_risk": {
+        "range": [12, 13],
+        "label": "Nguy cơ vừa",
+        "description": "Có nguy cơ trầm cảm sau sinh ở mức độ vừa",
+        "color": "orange",
+        "clinical_interpretation": "Cần tư vấn chuyên nghiệp"
+      },
+      "high_risk": {
+        "range": [14, 30],
+        "label": "Nguy cơ cao",
+        "description": "Nguy cơ trầm cảm sau sinh cao",
+        "color": "red",
+        "clinical_interpretation": "Cần can thiệp y tế ngay lập tức"
+      }
+    },
+    "suicide_risk_assessment": {
+      "item_10_score_0": "Không có nguy cơ tự làm hại",
+      "item_10_score_1": "Nguy cơ tự làm hại thấp - cần theo dõi",
+      "item_10_score_2": "Nguy cơ tự làm hại trung bình - cần đánh giá ngay",
+      "item_10_score_3": "Nguy cơ tự làm hại cao - cần can thiệp khẩn cấp"
+    }
+  },
+  "recommendations": {
+    "no_risk": {
+      "title": "Sức khỏe tâm lý tốt",
+      "message": "Bạn không có dấu hiệu trầm cảm sau sinh. Hãy tiếp tục chăm sóc bản thân và con.",
+      "suggestions": [
+        "Tiếp tục duy trì chế độ nghỉ ngơi hợp lý",
+        "Chia sẻ với gia đình về cảm xúc của bạn",
+        "Tham gia nhóm mẹ để có sự hỗ trợ",
+        "Duy trì hoạt động thể chất nhẹ nhàng",
+        "Đảm bảo dinh dưỡng đầy đủ"
+      ],
+      "follow_up": "Theo dõi định kỳ trong các lần khám thai sản"
+    },
+    "mild_risk": {
+      "title": "Nguy cơ trầm cảm nhẹ",
+      "message": "Bạn có một số dấu hiệu trầm cảm nhẹ. Hãy chú ý theo dõi và tìm kiếm sự hỗ trợ.",
+      "suggestions": [
+        "Chia sẻ cảm xúc với bác sĩ sản khoa",
+        "Tham gia nhóm hỗ trợ mẹ sau sinh",
+        "Đảm bảo có thời gian nghỉ ngơi đầy đủ",
+        "Nhờ gia đình hỗ trợ chăm sóc con",
+        "Thực hành kỹ thuật thư giãn",
+        "Duy trì liên lạc với bạn bè"
+      ],
+      "follow_up": "Đánh giá lại sau 1-2 tuần"
+    },
+    "moderate_risk": {
+      "title": "Nguy cơ trầm cảm vừa phải",
+      "message": "Bạn có nguy cơ trầm cảm sau sinh ở mức độ vừa. Cần tư vấn chuyên nghiệp.",
+      "suggestions": [
+        "Liên hệ ngay với bác sĩ sản khoa",
+        "Tư vấn với chuyên gia tâm lý chu sinh",
+        "Cân nhắc liệu pháp tâm lý",
+        "Đảm bảo có hệ thống hỗ trợ gia đình",
+        "Tham gia chương trình hỗ trợ mẹ sau sinh",
+        "Theo dõi chặt chẽ tình trạng sức khỏe"
+      ],
+      "follow_up": "Cần gặp chuyên gia trong tuần này"
+    },
+    "high_risk": {
+      "title": "Nguy cơ trầm cảm cao",
+      "message": "Bạn có nguy cơ trầm cảm sau sinh cao. Cần can thiệp y tế ngay lập tức.",
+      "suggestions": [
+        "Liên hệ ngay với bệnh viện sản khoa",
+        "Đánh giá nguy cơ tự làm hại và làm hại con",
+        "Cân nhắc điều trị thuốc an toàn cho mẹ và con",
+        "Liệu pháp tâm lý chuyên sâu",
+        "Đảm bảo không để mẹ ở một mình",
+        "Hỗ trợ chăm sóc con từ gia đình"
+      ],
+      "follow_up": "Cần can thiệp y tế ngay hôm nay"
+    }
+  },
+  "emergency_contacts": {
+    "vietnam": {
+      "maternal_mental_health_hotline": "1800-1567",
+      "postnatal_depression_support": "1900-555-556",
+      "emergency_services": "115",
+      "national_hospital_ob_gyn": "024-3823-3421",
+      "maternal_crisis_intervention": "024-3574-6666"
+    },
+    "when_to_call": [
+      "Câu 10 có điểm từ 2 trở lên",
+      "Tổng điểm EPDS >= 12",
+      "Có ý định tự làm hại bản thân hoặc con",
+      "Không thể chăm sóc con an toàn"
+    ]
+  },
+  "special_considerations": {
+    "pregnancy": {
+      "note": "EPDS có thể sử dụng trong thai kỳ để sàng lọc trầm cảm thai kỳ",
+      "timing": "Có thể đánh giá từ tam cá nguyệt thứ 2"
+    },
+    "postpartum": {
+      "optimal_timing": "6-8 tuần sau sinh",
+      "can_use_until": "12 tháng sau sinh"
+    },
+    "cultural_factors": {
+      "vietnam_specific": [
+        "Quan niệm 'ở cữ' truyền thống",
+        "Áp lực từ gia đình về chăm con",
+        "Kỳ vọng về vai trò người mẹ",
+        "Thiếu hỗ trợ tâm lý sau sinh"
+      ]
+    }
+  },
+  "clinical_notes": {
+    "administration_time": "5-7 phút",
+    "target_population": "Phụ nữ mang thai và sau sinh",
+    "screening_tool": true,
+    "diagnostic_tool": false,
+    "note": "EPDS là công cụ sàng lọc, cần đánh giá lâm sàng để chẩn đoán"
+  },
+  "references": {
+    "original_study": "Cox JL, Holden JM, Sagovsky R. Detection of postnatal depression. Development of the 10-item Edinburgh Postnatal Depression Scale. Br J Psychiatry. 1987;150:782-6.",
+    "vietnamese_validation": "Nghiên cứu thích nghi văn hóa Việt Nam cho phụ nữ sau sinh 2025",
+    "cutoff_points": "Điểm cắt được điều chỉnh phù hợp với dân số Việt Nam"
+  },
+  "metadata": {
+    "created_date": "2025-08-27",
+    "version": "2.0",
+    "language": "Vietnamese",
+    "country": "Vietnam",
+    "developer": "SoulFriend Team",
+    "last_updated": "2025-08-27",
+    "target_population": "Phụ nữ mang thai và sau sinh Việt Nam"
+  }
+}

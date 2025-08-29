@@ -1,0 +1,295 @@
+2025-08-27 11:16:54,676 - INFO - 🚀 PIPELINE: Bắt đầu quy trình kiểm tra toàn diện...
+2025-08-27 11:16:54,676 - INFO - 🔍 TESTER: Bắt đầu kiểm tra...
+2025-08-27 11:16:54,676 - INFO - 🔍 TESTER: Kiểm tra file tồn tại...
+2025-08-27 11:16:54,676 - INFO - ✅ SOULFRIEND.py - OK
+2025-08-27 11:16:54,676 - INFO - ✅ components/ui.py - OK
+2025-08-27 11:16:54,676 - INFO - ✅ components/ui_advanced.py - OK
+2025-08-27 11:16:54,677 - INFO - ✅ components/questionnaires.py - OK
+2025-08-27 11:16:54,677 - INFO - ✅ components/scoring.py - OK
+2025-08-27 11:16:54,677 - INFO - ✅ data/dass21_vi.json - OK
+2025-08-27 11:16:54,677 - INFO - ✅ requirements.txt - OK
+2025-08-27 11:16:54,677 - INFO - 🔍 TESTER: Kiểm tra Python syntax...
+2025-08-27 11:16:54,681 - INFO - ✅ Python syntax - OK
+2025-08-27 11:16:54,681 - INFO - 🔍 TESTER: Kiểm tra imports...
+2025-08-27 11:16:56,962 - INFO - ✅ Import streamlit - OK
+2025-08-27 11:17:04,471 - INFO - ✅ Import pandas - OK
+2025-08-27 11:17:04,471 - INFO - ✅ Import json - OK
+2025-08-27 11:17:04,471 - INFO - ✅ Import os - OK
+2025-08-27 11:17:04,471 - INFO - ✅ Import time - OK
+2025-08-27 11:17:04,471 - INFO - ✅ Import logging - OK
+2025-08-27 11:17:04,471 - INFO - ✅ Import datetime - OK
+2025-08-27 11:17:04,471 - INFO - 🔍 TESTER: Hoàn thành trong 9.80s
+2025-08-27 11:17:04,471 - INFO - 📋 QA: Bắt đầu kiểm tra chất lượng...
+2025-08-27 11:17:04,471 - INFO - 📋 QA: Kiểm tra cấu trúc code...
+2025-08-27 11:17:04,472 - INFO - ✅ QA: import streamlit - OK
+2025-08-27 11:17:04,472 - INFO - ✅ QA: st.set_page_config - OK
+2025-08-27 11:17:04,472 - INFO - ✅ QA: Smart UI Experience - OK
+2025-08-27 11:17:04,472 - INFO - ✅ QA: Logging setup - OK
+2025-08-27 11:17:04,472 - INFO - ✅ QA: DASS-21 questionnaire - OK
+2025-08-27 11:17:04,472 - INFO - ✅ QA: Session state - OK
+2025-08-27 11:17:04,472 - INFO - 📋 QA: Kiểm tra UI components...
+2025-08-27 11:17:04,472 - INFO - ✅ QA UI: Hero section - OK
+2025-08-27 11:17:04,473 - INFO - ✅ QA UI: Question cards - OK
+2025-08-27 11:17:04,473 - INFO - ✅ QA UI: Results dashboard - OK
+2025-08-27 11:17:04,473 - INFO - ✅ QA UI: Progress ring - OK
+2025-08-27 11:17:04,473 - INFO - ✅ QA UI: Consent form - OK
+2025-08-27 11:17:04,473 - INFO - 📋 QA: Kiểm tra data flow...
+2025-08-27 11:17:04,473 - INFO - ✅ QA DATA: Load questionnaire - OK
+2025-08-27 11:17:04,473 - INFO - ✅ QA DATA: Score calculation - OK
+2025-08-27 11:17:04,473 - INFO - ✅ QA DATA: State validation - OK
+2025-08-27 11:17:04,473 - INFO - ✅ QA DATA: Session management - OK
+2025-08-27 11:17:04,473 - ERROR - ❌ QA DATA: Check error - 'in <string>' requires string as left operand, not bool
+2025-08-27 11:17:04,473 - INFO - 📋 QA: Hoàn thành trong 0.00s
+2025-08-27 11:17:04,474 - INFO - 🎯 QC: Bắt đầu kiểm soát chất lượng...
+2025-08-27 11:17:04,474 - INFO - 🎯 QC: Kiểm tra sẵn sàng deployment...
+2025-08-27 11:17:04,474 - INFO - ✅ QC DEPLOY: SOULFRIEND.py exists - OK
+2025-08-27 11:17:04,474 - INFO - ✅ QC DEPLOY: Components folder - OK
+2025-08-27 11:17:04,474 - INFO - ✅ QC DEPLOY: Data folder - OK
+2025-08-27 11:17:04,474 - INFO - ✅ QC DEPLOY: Requirements file - OK
+2025-08-27 11:17:04,474 - INFO - ✅ QC DEPLOY: Launch script - OK
+2025-08-27 11:17:04,474 - INFO - 🎯 QC: Kiểm tra bảo mật...
+2025-08-27 11:17:04,475 - INFO - ✅ QC SECURITY: No hardcoded secrets - OK
+2025-08-27 11:17:04,475 - WARNING - ❌ QC SECURITY: Safe file operations - WARNING
+2025-08-27 11:17:04,475 - INFO - ✅ QC SECURITY: Input validation - OK
+2025-08-27 11:17:04,475 - WARNING - ❌ QC SECURITY: Error handling - WARNING
+2025-08-27 11:17:04,475 - INFO - ✅ QC SECURITY: Logging enabled - OK
+2025-08-27 11:17:04,475 - INFO - 🎯 QC: Kiểm tra hiệu suất...
+2025-08-27 11:17:04,475 - INFO - ✅ QC PERF: File size 0.01MB - OK
+2025-08-27 11:17:04,476 - INFO - ✅ QC PERF: 305 lines - OK
+2025-08-27 11:17:04,476 - INFO - 🎯 QC: Hoàn thành trong 0.00s
+2025-08-27 11:17:49,249 - INFO - 🚀 PIPELINE: Bắt đầu quy trình kiểm tra toàn diện...
+2025-08-27 11:17:49,249 - INFO - 🔍 TESTER: Bắt đầu kiểm tra...
+2025-08-27 11:17:49,249 - INFO - 🔍 TESTER: Kiểm tra file tồn tại...
+2025-08-27 11:17:49,249 - INFO - ✅ SOULFRIEND.py - OK
+2025-08-27 11:17:49,249 - INFO - ✅ components/ui.py - OK
+2025-08-27 11:17:49,249 - INFO - ✅ components/ui_advanced.py - OK
+2025-08-27 11:17:49,249 - INFO - ✅ components/questionnaires.py - OK
+2025-08-27 11:17:49,249 - INFO - ✅ components/scoring.py - OK
+2025-08-27 11:17:49,249 - INFO - ✅ data/dass21_vi.json - OK
+2025-08-27 11:17:49,250 - INFO - ✅ requirements.txt - OK
+2025-08-27 11:17:49,250 - INFO - 🔍 TESTER: Kiểm tra Python syntax...
+2025-08-27 11:17:49,255 - INFO - ✅ Python syntax - OK
+2025-08-27 11:17:49,255 - INFO - 🔍 TESTER: Kiểm tra imports...
+2025-08-27 11:17:49,584 - INFO - ✅ Import streamlit - OK
+2025-08-27 11:17:49,920 - INFO - ✅ Import pandas - OK
+2025-08-27 11:17:49,920 - INFO - ✅ Import json - OK
+2025-08-27 11:17:49,920 - INFO - ✅ Import os - OK
+2025-08-27 11:17:49,920 - INFO - ✅ Import time - OK
+2025-08-27 11:17:49,920 - INFO - ✅ Import logging - OK
+2025-08-27 11:17:49,920 - INFO - ✅ Import datetime - OK
+2025-08-27 11:17:49,920 - INFO - 🔍 TESTER: Hoàn thành trong 0.67s
+2025-08-27 11:17:49,921 - INFO - 📋 QA: Bắt đầu kiểm tra chất lượng...
+2025-08-27 11:17:49,921 - INFO - 📋 QA: Kiểm tra cấu trúc code...
+2025-08-27 11:17:49,921 - INFO - ✅ QA: import streamlit - OK
+2025-08-27 11:17:49,921 - INFO - ✅ QA: st.set_page_config - OK
+2025-08-27 11:17:49,921 - INFO - ✅ QA: Smart UI Experience - OK
+2025-08-27 11:17:49,921 - INFO - ✅ QA: Logging setup - OK
+2025-08-27 11:17:49,921 - INFO - ✅ QA: DASS-21 questionnaire - OK
+2025-08-27 11:17:49,922 - INFO - ✅ QA: Session state - OK
+2025-08-27 11:17:49,922 - INFO - 📋 QA: Kiểm tra UI components...
+2025-08-27 11:17:49,922 - INFO - ✅ QA UI: Hero section - OK
+2025-08-27 11:17:49,922 - INFO - ✅ QA UI: Question cards - OK
+2025-08-27 11:17:49,922 - INFO - ✅ QA UI: Results dashboard - OK
+2025-08-27 11:17:49,922 - INFO - ✅ QA UI: Progress ring - OK
+2025-08-27 11:17:49,922 - INFO - ✅ QA UI: Consent form - OK
+2025-08-27 11:17:49,922 - INFO - 📋 QA: Kiểm tra data flow...
+2025-08-27 11:17:49,923 - INFO - ✅ QA DATA: Load questionnaire - OK
+2025-08-27 11:17:49,923 - INFO - ✅ QA DATA: Score calculation - OK
+2025-08-27 11:17:49,923 - INFO - ✅ QA DATA: State validation - OK
+2025-08-27 11:17:49,923 - INFO - ✅ QA DATA: Session management - OK
+2025-08-27 11:17:49,923 - WARNING - ❌ QA DATA: User responses - MISSING
+2025-08-27 11:17:49,923 - INFO - 📋 QA: Hoàn thành trong 0.00s
+2025-08-27 11:17:49,923 - INFO - 🎯 QC: Bắt đầu kiểm soát chất lượng...
+2025-08-27 11:17:49,924 - INFO - 🎯 QC: Kiểm tra sẵn sàng deployment...
+2025-08-27 11:17:49,924 - INFO - ✅ QC DEPLOY: SOULFRIEND.py exists - OK
+2025-08-27 11:17:49,924 - INFO - ✅ QC DEPLOY: Components folder - OK
+2025-08-27 11:17:49,924 - INFO - ✅ QC DEPLOY: Data folder - OK
+2025-08-27 11:17:49,924 - INFO - ✅ QC DEPLOY: Requirements file - OK
+2025-08-27 11:17:49,924 - INFO - ✅ QC DEPLOY: Launch script - OK
+2025-08-27 11:17:49,924 - INFO - 🎯 QC: Kiểm tra bảo mật...
+2025-08-27 11:17:49,925 - INFO - ✅ QC SECURITY: No hardcoded secrets - OK
+2025-08-27 11:17:49,925 - WARNING - ❌ QC SECURITY: Safe file operations - WARNING
+2025-08-27 11:17:49,925 - INFO - ✅ QC SECURITY: Input validation - OK
+2025-08-27 11:17:49,925 - WARNING - ❌ QC SECURITY: Error handling - WARNING
+2025-08-27 11:17:49,925 - INFO - ✅ QC SECURITY: Logging enabled - OK
+2025-08-27 11:17:49,925 - INFO - 🎯 QC: Kiểm tra hiệu suất...
+2025-08-27 11:17:49,925 - INFO - ✅ QC PERF: File size 0.01MB - OK
+2025-08-27 11:17:49,926 - INFO - ✅ QC PERF: 305 lines - OK
+2025-08-27 11:17:49,926 - INFO - 🎯 QC: Hoàn thành trong 0.00s
+2025-08-27 11:25:09,339 - INFO - 🚀 PIPELINE: Bắt đầu quy trình kiểm tra toàn diện...
+2025-08-27 11:25:09,340 - INFO - 🔍 TESTER: Bắt đầu kiểm tra...
+2025-08-27 11:25:09,341 - INFO - 🔍 TESTER: Kiểm tra file tồn tại...
+2025-08-27 11:25:09,341 - INFO - ✅ SOULFRIEND.py - OK
+2025-08-27 11:25:09,341 - INFO - ✅ components/ui.py - OK
+2025-08-27 11:25:09,341 - INFO - ✅ components/ui_advanced.py - OK
+2025-08-27 11:25:09,342 - INFO - ✅ components/questionnaires.py - OK
+2025-08-27 11:25:09,342 - INFO - ✅ components/scoring.py - OK
+2025-08-27 11:25:09,342 - INFO - ✅ data/dass21_vi.json - OK
+2025-08-27 11:25:09,342 - INFO - ✅ requirements.txt - OK
+2025-08-27 11:25:09,342 - INFO - 🔍 TESTER: Kiểm tra Python syntax...
+2025-08-27 11:25:09,352 - INFO - ✅ Python syntax - OK
+2025-08-27 11:25:09,352 - INFO - 🔍 TESTER: Kiểm tra imports...
+2025-08-27 11:25:09,700 - INFO - ✅ Import streamlit - OK
+2025-08-27 11:25:10,047 - INFO - ✅ Import pandas - OK
+2025-08-27 11:25:10,047 - INFO - ✅ Import json - OK
+2025-08-27 11:25:10,047 - INFO - ✅ Import os - OK
+2025-08-27 11:25:10,047 - INFO - ✅ Import time - OK
+2025-08-27 11:25:10,047 - INFO - ✅ Import logging - OK
+2025-08-27 11:25:10,047 - INFO - ✅ Import datetime - OK
+2025-08-27 11:25:10,047 - INFO - 🔍 TESTER: Hoàn thành trong 0.71s
+2025-08-27 11:25:10,047 - INFO - 📋 QA: Bắt đầu kiểm tra chất lượng...
+2025-08-27 11:25:10,048 - INFO - 📋 QA: Kiểm tra cấu trúc code...
+2025-08-27 11:25:10,048 - INFO - ✅ QA: import streamlit - OK
+2025-08-27 11:25:10,048 - INFO - ✅ QA: st.set_page_config - OK
+2025-08-27 11:25:10,048 - INFO - ✅ QA: Smart UI Experience - OK
+2025-08-27 11:25:10,048 - INFO - ✅ QA: Logging setup - OK
+2025-08-27 11:25:10,048 - INFO - ✅ QA: DASS-21 questionnaire - OK
+2025-08-27 11:25:10,048 - INFO - ✅ QA: Session state - OK
+2025-08-27 11:25:10,048 - INFO - 📋 QA: Kiểm tra UI components...
+2025-08-27 11:25:10,049 - INFO - ✅ QA UI: Hero section - OK
+2025-08-27 11:25:10,049 - INFO - ✅ QA UI: Question cards - OK
+2025-08-27 11:25:10,049 - INFO - ✅ QA UI: Results dashboard - OK
+2025-08-27 11:25:10,049 - INFO - ✅ QA UI: Progress ring - OK
+2025-08-27 11:25:10,049 - INFO - ✅ QA UI: Consent form - OK
+2025-08-27 11:25:10,049 - INFO - 📋 QA: Kiểm tra data flow...
+2025-08-27 11:25:10,049 - INFO - ✅ QA DATA: Load questionnaire - OK
+2025-08-27 11:25:10,049 - INFO - ✅ QA DATA: Score calculation - OK
+2025-08-27 11:25:10,049 - INFO - ✅ QA DATA: State validation - OK
+2025-08-27 11:25:10,050 - INFO - ✅ QA DATA: Session management - OK
+2025-08-27 11:25:10,050 - WARNING - ❌ QA DATA: User responses - MISSING
+2025-08-27 11:25:10,050 - INFO - 📋 QA: Hoàn thành trong 0.00s
+2025-08-27 11:25:10,050 - INFO - 🎯 QC: Bắt đầu kiểm soát chất lượng...
+2025-08-27 11:25:10,050 - INFO - 🎯 QC: Kiểm tra sẵn sàng deployment...
+2025-08-27 11:25:10,050 - INFO - ✅ QC DEPLOY: SOULFRIEND.py exists - OK
+2025-08-27 11:25:10,050 - INFO - ✅ QC DEPLOY: Components folder - OK
+2025-08-27 11:25:10,051 - INFO - ✅ QC DEPLOY: Data folder - OK
+2025-08-27 11:25:10,051 - INFO - ✅ QC DEPLOY: Requirements file - OK
+2025-08-27 11:25:10,051 - INFO - ✅ QC DEPLOY: Launch script - OK
+2025-08-27 11:25:10,051 - INFO - 🎯 QC: Kiểm tra bảo mật...
+2025-08-27 11:25:10,051 - INFO - ✅ QC SECURITY: No hardcoded secrets - OK
+2025-08-27 11:25:10,051 - WARNING - ❌ QC SECURITY: Safe file operations - WARNING
+2025-08-27 11:25:10,051 - INFO - ✅ QC SECURITY: Input validation - OK
+2025-08-27 11:25:10,051 - WARNING - ❌ QC SECURITY: Error handling - WARNING
+2025-08-27 11:25:10,052 - INFO - ✅ QC SECURITY: Logging enabled - OK
+2025-08-27 11:25:10,052 - INFO - 🎯 QC: Kiểm tra hiệu suất...
+2025-08-27 11:25:10,052 - INFO - ✅ QC PERF: File size 0.01MB - OK
+2025-08-27 11:25:10,052 - INFO - ✅ QC PERF: 314 lines - OK
+2025-08-27 11:25:10,052 - INFO - 🎯 QC: Hoàn thành trong 0.00s
+2025-08-27 11:27:21,615 - INFO - 🚀 PIPELINE: Bắt đầu quy trình kiểm tra toàn diện...
+2025-08-27 11:27:21,615 - INFO - 🔍 TESTER: Bắt đầu kiểm tra...
+2025-08-27 11:27:21,615 - INFO - 🔍 TESTER: Kiểm tra file tồn tại...
+2025-08-27 11:27:21,615 - INFO - ✅ SOULFRIEND.py - OK
+2025-08-27 11:27:21,616 - INFO - ✅ components/ui.py - OK
+2025-08-27 11:27:21,616 - INFO - ✅ components/ui_advanced.py - OK
+2025-08-27 11:27:21,616 - INFO - ✅ components/questionnaires.py - OK
+2025-08-27 11:27:21,616 - INFO - ✅ components/scoring.py - OK
+2025-08-27 11:27:21,616 - INFO - ✅ data/dass21_vi.json - OK
+2025-08-27 11:27:21,616 - INFO - ✅ requirements.txt - OK
+2025-08-27 11:27:21,616 - INFO - 🔍 TESTER: Kiểm tra Python syntax...
+2025-08-27 11:27:21,622 - INFO - ✅ Python syntax - OK
+2025-08-27 11:27:21,623 - INFO - 🔍 TESTER: Kiểm tra imports...
+2025-08-27 11:27:21,956 - INFO - ✅ Import streamlit - OK
+2025-08-27 11:27:22,339 - INFO - ✅ Import pandas - OK
+2025-08-27 11:27:22,339 - INFO - ✅ Import json - OK
+2025-08-27 11:27:22,340 - INFO - ✅ Import os - OK
+2025-08-27 11:27:22,340 - INFO - ✅ Import time - OK
+2025-08-27 11:27:22,340 - INFO - ✅ Import logging - OK
+2025-08-27 11:27:22,340 - INFO - ✅ Import datetime - OK
+2025-08-27 11:27:22,340 - INFO - 🔍 TESTER: Hoàn thành trong 0.72s
+2025-08-27 11:27:22,340 - INFO - 📋 QA: Bắt đầu kiểm tra chất lượng...
+2025-08-27 11:27:22,340 - INFO - 📋 QA: Kiểm tra cấu trúc code...
+2025-08-27 11:27:22,341 - INFO - ✅ QA: import streamlit - OK
+2025-08-27 11:27:22,341 - INFO - ✅ QA: st.set_page_config - OK
+2025-08-27 11:27:22,341 - INFO - ✅ QA: Smart UI Experience - OK
+2025-08-27 11:27:22,341 - INFO - ✅ QA: Logging setup - OK
+2025-08-27 11:27:22,341 - INFO - ✅ QA: DASS-21 questionnaire - OK
+2025-08-27 11:27:22,341 - INFO - ✅ QA: Session state - OK
+2025-08-27 11:27:22,341 - INFO - 📋 QA: Kiểm tra UI components...
+2025-08-27 11:27:22,342 - INFO - ✅ QA UI: Hero section - OK
+2025-08-27 11:27:22,342 - INFO - ✅ QA UI: Question cards - OK
+2025-08-27 11:27:22,342 - INFO - ✅ QA UI: Results dashboard - OK
+2025-08-27 11:27:22,342 - INFO - ✅ QA UI: Progress ring - OK
+2025-08-27 11:27:22,342 - INFO - ✅ QA UI: Consent form - OK
+2025-08-27 11:27:22,342 - INFO - 📋 QA: Kiểm tra data flow...
+2025-08-27 11:27:22,342 - INFO - ✅ QA DATA: Load questionnaire - OK
+2025-08-27 11:27:22,342 - INFO - ✅ QA DATA: Score calculation - OK
+2025-08-27 11:27:22,342 - INFO - ✅ QA DATA: State validation - OK
+2025-08-27 11:27:22,342 - INFO - ✅ QA DATA: Session management - OK
+2025-08-27 11:27:22,343 - WARNING - ❌ QA DATA: User responses - MISSING
+2025-08-27 11:27:22,343 - INFO - 📋 QA: Hoàn thành trong 0.00s
+2025-08-27 11:27:22,343 - INFO - 🎯 QC: Bắt đầu kiểm soát chất lượng...
+2025-08-27 11:27:22,343 - INFO - 🎯 QC: Kiểm tra sẵn sàng deployment...
+2025-08-27 11:27:22,343 - INFO - ✅ QC DEPLOY: SOULFRIEND.py exists - OK
+2025-08-27 11:27:22,343 - INFO - ✅ QC DEPLOY: Components folder - OK
+2025-08-27 11:27:22,344 - INFO - ✅ QC DEPLOY: Data folder - OK
+2025-08-27 11:27:22,344 - INFO - ✅ QC DEPLOY: Requirements file - OK
+2025-08-27 11:27:22,344 - INFO - ✅ QC DEPLOY: Launch script - OK
+2025-08-27 11:27:22,344 - INFO - 🎯 QC: Kiểm tra bảo mật...
+2025-08-27 11:27:22,344 - INFO - ✅ QC SECURITY: No hardcoded secrets - OK
+2025-08-27 11:27:22,344 - WARNING - ❌ QC SECURITY: Safe file operations - WARNING
+2025-08-27 11:27:22,345 - INFO - ✅ QC SECURITY: Input validation - OK
+2025-08-27 11:27:22,345 - WARNING - ❌ QC SECURITY: Error handling - WARNING
+2025-08-27 11:27:22,345 - INFO - ✅ QC SECURITY: Logging enabled - OK
+2025-08-27 11:27:22,345 - INFO - 🎯 QC: Kiểm tra hiệu suất...
+2025-08-27 11:27:22,345 - INFO - ✅ QC PERF: File size 0.02MB - OK
+2025-08-27 11:27:22,345 - INFO - ✅ QC PERF: 443 lines - OK
+2025-08-27 11:27:22,345 - INFO - 🎯 QC: Hoàn thành trong 0.00s
+2025-08-27 11:29:40,157 - INFO - 🚀 PIPELINE: Bắt đầu quy trình kiểm tra toàn diện...
+2025-08-27 11:29:40,157 - INFO - 🔍 TESTER: Bắt đầu kiểm tra...
+2025-08-27 11:29:40,157 - INFO - 🔍 TESTER: Kiểm tra file tồn tại...
+2025-08-27 11:29:40,157 - INFO - ✅ SOULFRIEND.py - OK
+2025-08-27 11:29:40,158 - INFO - ✅ components/ui.py - OK
+2025-08-27 11:29:40,158 - INFO - ✅ components/ui_advanced.py - OK
+2025-08-27 11:29:40,158 - INFO - ✅ components/questionnaires.py - OK
+2025-08-27 11:29:40,158 - INFO - ✅ components/scoring.py - OK
+2025-08-27 11:29:40,158 - INFO - ✅ data/dass21_vi.json - OK
+2025-08-27 11:29:40,159 - INFO - ✅ requirements.txt - OK
+2025-08-27 11:29:40,159 - INFO - 🔍 TESTER: Kiểm tra Python syntax...
+2025-08-27 11:29:40,167 - INFO - ✅ Python syntax - OK
+2025-08-27 11:29:40,167 - INFO - 🔍 TESTER: Kiểm tra imports...
+2025-08-27 11:29:40,522 - INFO - ✅ Import streamlit - OK
+2025-08-27 11:29:40,864 - INFO - ✅ Import pandas - OK
+2025-08-27 11:29:40,864 - INFO - ✅ Import json - OK
+2025-08-27 11:29:40,864 - INFO - ✅ Import os - OK
+2025-08-27 11:29:40,864 - INFO - ✅ Import time - OK
+2025-08-27 11:29:40,864 - INFO - ✅ Import logging - OK
+2025-08-27 11:29:40,865 - INFO - ✅ Import datetime - OK
+2025-08-27 11:29:40,865 - INFO - 🔍 TESTER: Hoàn thành trong 0.71s
+2025-08-27 11:29:40,865 - INFO - 📋 QA: Bắt đầu kiểm tra chất lượng...
+2025-08-27 11:29:40,865 - INFO - 📋 QA: Kiểm tra cấu trúc code...
+2025-08-27 11:29:40,865 - INFO - ✅ QA: import streamlit - OK
+2025-08-27 11:29:40,865 - INFO - ✅ QA: st.set_page_config - OK
+2025-08-27 11:29:40,865 - INFO - ✅ QA: Smart UI Experience - OK
+2025-08-27 11:29:40,866 - INFO - ✅ QA: Logging setup - OK
+2025-08-27 11:29:40,866 - INFO - ✅ QA: DASS-21 questionnaire - OK
+2025-08-27 11:29:40,866 - INFO - ✅ QA: Session state - OK
+2025-08-27 11:29:40,866 - INFO - 📋 QA: Kiểm tra UI components...
+2025-08-27 11:29:40,866 - INFO - ✅ QA UI: Hero section - OK
+2025-08-27 11:29:40,866 - INFO - ✅ QA UI: Question cards - OK
+2025-08-27 11:29:40,866 - INFO - ✅ QA UI: Results dashboard - OK
+2025-08-27 11:29:40,866 - INFO - ✅ QA UI: Progress ring - OK
+2025-08-27 11:29:40,867 - INFO - ✅ QA UI: Consent form - OK
+2025-08-27 11:29:40,867 - INFO - 📋 QA: Kiểm tra data flow...
+2025-08-27 11:29:40,867 - INFO - ✅ QA DATA: Load questionnaire - OK
+2025-08-27 11:29:40,867 - INFO - ✅ QA DATA: Score calculation - OK
+2025-08-27 11:29:40,867 - INFO - ✅ QA DATA: State validation - OK
+2025-08-27 11:29:40,867 - INFO - ✅ QA DATA: Session management - OK
+2025-08-27 11:29:40,867 - WARNING - ❌ QA DATA: User responses - MISSING
+2025-08-27 11:29:40,867 - INFO - 📋 QA: Hoàn thành trong 0.00s
+2025-08-27 11:29:40,867 - INFO - 🎯 QC: Bắt đầu kiểm soát chất lượng...
+2025-08-27 11:29:40,868 - INFO - 🎯 QC: Kiểm tra sẵn sàng deployment...
+2025-08-27 11:29:40,868 - INFO - ✅ QC DEPLOY: SOULFRIEND.py exists - OK
+2025-08-27 11:29:40,868 - INFO - ✅ QC DEPLOY: Components folder - OK
+2025-08-27 11:29:40,868 - INFO - ✅ QC DEPLOY: Data folder - OK
+2025-08-27 11:29:40,868 - INFO - ✅ QC DEPLOY: Requirements file - OK
+2025-08-27 11:29:40,868 - INFO - ✅ QC DEPLOY: Launch script - OK
+2025-08-27 11:29:40,868 - INFO - 🎯 QC: Kiểm tra bảo mật...
+2025-08-27 11:29:40,869 - INFO - ✅ QC SECURITY: No hardcoded secrets - OK
+2025-08-27 11:29:40,869 - WARNING - ❌ QC SECURITY: Safe file operations - WARNING
+2025-08-27 11:29:40,869 - INFO - ✅ QC SECURITY: Input validation - OK
+2025-08-27 11:29:40,869 - WARNING - ❌ QC SECURITY: Error handling - WARNING
+2025-08-27 11:29:40,869 - INFO - ✅ QC SECURITY: Logging enabled - OK
+2025-08-27 11:29:40,869 - INFO - 🎯 QC: Kiểm tra hiệu suất...
+2025-08-27 11:29:40,869 - INFO - ✅ QC PERF: File size 0.02MB - OK
+2025-08-27 11:29:40,870 - INFO - ✅ QC PERF: 443 lines - OK
+2025-08-27 11:29:40,870 - INFO - 🎯 QC: Hoàn thành trong 0.00s

@@ -1,0 +1,87 @@
+{
+  "name": "GAD-7",
+  "description": "Generalized Anxiety Disorder 7-item Scale - Vietnamese Version",
+  "language": "vi",
+  "version": "2025-08-27",
+  "instructions": "Trong 2 tuần qua, bạn có thường xuyên bị làm phiền bởi những vấn đề sau đây không?",
+  "questions": [
+    {
+      "id": 1,
+      "text": "Cảm thấy lo lắng, bồn chồn hoặc căng thẳng",
+      "options": [
+        {"value": 0, "text": "Không bao giờ"},
+        {"value": 1, "text": "Một số ngày"},
+        {"value": 2, "text": "Hơn một nửa số ngày"},
+        {"value": 3, "text": "Gần như mỗi ngày"}
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Không thể ngừng hoặc kiểm soát sự lo lắng",
+      "options": [
+        {"value": 0, "text": "Không bao giờ"},
+        {"value": 1, "text": "Một số ngày"},
+        {"value": 2, "text": "Hơn một nửa số ngày"},
+        {"value": 3, "text": "Gần như mỗi ngày"}
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Lo lắng quá nhiều về những điều khác nhau",
+      "options": [
+        {"value": 0, "text": "Không bao giờ"},
+        {"value": 1, "text": "Một số ngày"},
+        {"value": 2, "text": "Hơn một nửa số ngày"},
+        {"value": 3, "text": "Gần như mỗi ngày"}
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Khó có thể thư giãn",
+      "options": [
+        {"value": 0, "text": "Không bao giờ"},
+        {"value": 1, "text": "Một số ngày"},
+        {"value": 2, "text": "Hơn một nửa số ngày"},
+        {"value": 3, "text": "Gần như mỗi ngày"}
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Bồn chồn đến mức khó ngồi yên",
+      "options": [
+        {"value": 0, "text": "Không bao giờ"},
+        {"value": 1, "text": "Một số ngày"},
+        {"value": 2, "text": "Hơn một nửa số ngày"},
+        {"value": 3, "text": "Gần như mỗi ngày"}
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Trở nên dễ bực bội hoặc cáu kỉnh",
+      "options": [
+        {"value": 0, "text": "Không bao giờ"},
+        {"value": 1, "text": "Một số ngày"},
+        {"value": 2, "text": "Hơn một nửa số ngày"},
+        {"value": 3, "text": "Gần như mỗi ngày"}
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Cảm thấy sợ hãi như thể điều gì đó tệ hại sẽ xảy ra",
+      "options": [
+        {"value": 0, "text": "Không bao giờ"},
+        {"value": 1, "text": "Một số ngày"},
+        {"value": 2, "text": "Hơn một nửa số ngày"},
+        {"value": 3, "text": "Gần như mỗi ngày"}
+      ]
+    }
+  ],
+  "scoring": {
+    "ranges": [
+      {"min": 0, "max": 4, "level": "Minimal anxiety", "description": "Lo lắng tối thiểu"},
+      {"min": 5, "max": 9, "level": "Mild anxiety", "description": "Lo lắng nhẹ"},
+      {"min": 10, "max": 14, "level": "Moderate anxiety", "description": "Lo lắng vừa phải"},
+      {"min": 15, "max": 21, "level": "Severe anxiety", "description": "Lo lắng nghiêm trọng"}
+    ]
+  }
+}

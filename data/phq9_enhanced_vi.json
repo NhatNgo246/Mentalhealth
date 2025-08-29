@@ -1,0 +1,278 @@
+{
+  "scale": "PHQ-9",
+  "version": "2.0",
+  "description": "Bảng đánh giá Trầm cảm PHQ-9 - Phiên bản Việt Nam nâng cao",
+  "full_name": "Patient Health Questionnaire-9",
+  "target_condition": "Trầm cảm",
+  "time_frame": "2 tuần qua",
+  "instructions": {
+    "title": "Hướng dẫn trả lời PHQ-9",
+    "content": "Trong 2 tuần qua, bạn đã bị làm phiền bởi các vấn đề sau đây thường xuyên như thế nào?",
+    "time_frame": "2 tuần vừa qua",
+    "tips": [
+      "Hãy nghĩ về 14 ngày gần đây nhất",
+      "Trả lời trung thực nhất có thể",
+      "Không có câu trả lời đúng hay sai",
+      "Nếu phân vân, chọn đáp án gần nhất với cảm nhận của bạn"
+    ]
+  },
+  "options": [
+    {
+      "value": 0,
+      "label": "0 - Không ngày nào",
+      "description": "Hoàn toàn không gặp phải vấn đề này",
+      "emoji": "😊",
+      "frequency": "0 ngày"
+    },
+    {
+      "value": 1,
+      "label": "1 - Vài ngày",
+      "description": "Gặp phải vấn đề này từ 1-6 ngày",
+      "emoji": "😐",
+      "frequency": "1-6 ngày"
+    },
+    {
+      "value": 2,
+      "label": "2 - Hơn nửa số ngày",
+      "description": "Gặp phải vấn đề này từ 7-11 ngày",
+      "emoji": "😕",
+      "frequency": "7-11 ngày"
+    },
+    {
+      "value": 3,
+      "label": "3 - Gần như mỗi ngày",
+      "description": "Gặp phải vấn đề này từ 12-14 ngày",
+      "emoji": "😔",
+      "frequency": "12-14 ngày"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "text": "Ít hứng thú hoặc không vui thích khi làm việc",
+      "category": "Anhedonia",
+      "domain": "Mood",
+      "vietnamese_context": "Mất hứng thú với công việc, hoạt động hàng ngày",
+      "clinical_significance": "Triệu chứng cốt lõi của trầm cảm",
+      "examples": "Không thích làm việc, không muốn gặp gỡ bạn bè"
+    },
+    {
+      "id": 2,
+      "text": "Cảm thấy buồn chán, chán nản hoặc tuyệt vọng",
+      "category": "Dysphoria",
+      "domain": "Mood",
+      "vietnamese_context": "Tâm trạng tiêu cực, bi quan về cuộc sống",
+      "clinical_significance": "Triệu chứng cốt lõi của trầm cảm",
+      "examples": "Cảm thấy cuộc sống vô nghĩa, không có hy vọng"
+    },
+    {
+      "id": 3,
+      "text": "Khó ngủ, không ngủ sâu hoặc ngủ quá nhiều",
+      "category": "Sleep Disturbance",
+      "domain": "Neurovegetative",
+      "vietnamese_context": "Rối loạn giấc ngủ do trầm cảm",
+      "clinical_significance": "Triệu chứng thường gặp trong trầm cảm",
+      "examples": "Mất ngủ, ngủ không sâu, hoặc ngủ quá nhiều"
+    },
+    {
+      "id": 4,
+      "text": "Cảm thấy mệt mỏi hoặc thiếu năng lượng",
+      "category": "Fatigue",
+      "domain": "Neurovegetative",
+      "vietnamese_context": "Kiệt sức, không có sức lực làm việc",
+      "clinical_significance": "Triệu chứng phổ biến của trầm cảm",
+      "examples": "Luôn cảm thấy mệt, không muốn làm gì"
+    },
+    {
+      "id": 5,
+      "text": "Kém ngon miệng hoặc ăn quá nhiều",
+      "category": "Appetite Change",
+      "domain": "Neurovegetative",
+      "vietnamese_context": "Thay đổi thói quen ăn uống do trầm cảm",
+      "clinical_significance": "Rối loạn ăn uống trong trầm cảm",
+      "examples": "Không muốn ăn hoặc ăn để xoa dịu cảm xúc"
+    },
+    {
+      "id": 6,
+      "text": "Cảm thấy tệ về bản thân — hoặc cảm thấy mình là kẻ thất bại hoặc đã làm gia đình hoặc chính mình thất vọng",
+      "category": "Self-Worth",
+      "domain": "Cognitive",
+      "vietnamese_context": "Đánh giá tiêu cực về bản thân, cảm giác tội lỗi",
+      "clinical_significance": "Triệu chứng nhận thức trong trầm cảm",
+      "examples": "Tự trách mình, cảm thấy vô dụng, tội lỗi"
+    },
+    {
+      "id": 7,
+      "text": "Khó tập trung vào việc gì đó, chẳng hạn như đọc báo hoặc xem tivi",
+      "category": "Concentration",
+      "domain": "Cognitive",
+      "vietnamese_context": "Suy giảm khả năng tập trung, chú ý",
+      "clinical_significance": "Rối loạn nhận thức trong trầm cảm",
+      "examples": "Không thể đọc sách, xem phim, tập trung làm việc"
+    },
+    {
+      "id": 8,
+      "text": "Di chuyển hoặc nói chậm đến mức người khác có thể nhận ra. Hoặc ngược lại — bạn bồn chồn hoặc khó yên tâm đến mức bạn di chuyển nhiều hơn bình thường",
+      "category": "Psychomotor",
+      "domain": "Behavioral",
+      "vietnamese_context": "Thay đổi vận động và hành vi do trầm cảm",
+      "clinical_significance": "Triệu chứng vận động trong trầm cảm",
+      "examples": "Nói chậm, cử động chậm, hoặc ngược lại bồn chồn"
+    },
+    {
+      "id": 9,
+      "text": "Có những ý nghĩ rằng bạn sẽ tốt hơn nếu chết đi hoặc có ý nghĩ làm tổn thương bản thân theo cách nào đó",
+      "category": "Suicidal Ideation",
+      "domain": "Safety",
+      "vietnamese_context": "Ý tưởng tự sát hoặc tự làm hại bản thân",
+      "clinical_significance": "Triệu chứng nghiêm trọng cần can thiệp ngay",
+      "examples": "Nghĩ đến chuyện chết, tự làm hại bản thân",
+      "warning": "Đây là triệu chứng nghiêm trọng cần được can thiệp y tế ngay lập tức"
+    }
+  ],
+  "scoring": {
+    "total_score": {
+      "min": 0,
+      "max": 27,
+      "calculation": "Tổng điểm của 9 câu hỏi"
+    },
+    "severity_levels": {
+      "minimal": {
+        "range": [0, 4],
+        "label": "Tối thiểu",
+        "description": "Không có triệu chứng trầm cảm đáng kể",
+        "color": "green",
+        "clinical_interpretation": "Không cần can thiệp"
+      },
+      "mild": {
+        "range": [5, 9],
+        "label": "Nhẹ",
+        "description": "Triệu chứng trầm cảm nhẹ",
+        "color": "yellow",
+        "clinical_interpretation": "Theo dõi, hỗ trợ tâm lý"
+      },
+      "moderate": {
+        "range": [10, 14],
+        "label": "Vừa",
+        "description": "Triệu chứng trầm cảm vừa phải",
+        "color": "orange",
+        "clinical_interpretation": "Cần tư vấn chuyên nghiệp"
+      },
+      "moderately_severe": {
+        "range": [15, 19],
+        "label": "Khá nặng",
+        "description": "Triệu chứng trầm cảm khá nghiêm trọng",
+        "color": "red",
+        "clinical_interpretation": "Cần điều trị tâm lý hoặc thuốc"
+      },
+      "severe": {
+        "range": [20, 27],
+        "label": "Nặng",
+        "description": "Triệu chứng trầm cảm nghiêm trọng",
+        "color": "darkred",
+        "clinical_interpretation": "Cần điều trị tích cực ngay lập tức"
+      }
+    },
+    "suicide_risk_assessment": {
+      "item_9_score_0": "Không có nguy cơ tự sát",
+      "item_9_score_1": "Nguy cơ tự sát thấp - cần theo dõi",
+      "item_9_score_2": "Nguy cơ tự sát trung bình - cần đánh giá thêm",
+      "item_9_score_3": "Nguy cơ tự sát cao - cần can thiệp ngay"
+    }
+  },
+  "recommendations": {
+    "minimal": {
+      "title": "Tình trạng tâm lý ổn định",
+      "message": "Bạn không có dấu hiệu trầm cảm đáng kể. Hãy duy trì lối sống lành mạnh.",
+      "suggestions": [
+        "Tiếp tục duy trì hoạt động thể chất đều đặn",
+        "Giữ mối quan hệ xã hội tích cực",
+        "Thực hành kỹ thuật quản lý stress",
+        "Duy trì lịch ngủ đều đặn"
+      ],
+      "follow_up": "Không cần theo dõi đặc biệt"
+    },
+    "mild": {
+      "title": "Triệu chứng trầm cảm nhẹ",
+      "message": "Bạn có một số dấu hiệu trầm cảm nhẹ. Đây là lúc tốt để chú ý đến sức khỏe tâm lý.",
+      "suggestions": [
+        "Tăng cường hoạt động thể chất",
+        "Thực hành thiền và yoga",
+        "Chia sẻ với người thân, bạn bè",
+        "Tham gia hoạt động xã hội tích cực",
+        "Cải thiện chất lượng giấc ngủ"
+      ],
+      "follow_up": "Theo dõi sau 2-4 tuần"
+    },
+    "moderate": {
+      "title": "Triệu chứng trầm cảm vừa phải",
+      "message": "Bạn đang trải qua triệu chứng trầm cảm ở mức độ vừa. Hãy tìm kiếm sự hỗ trợ chuyên nghiệp.",
+      "suggestions": [
+        "Tư vấn với chuyên gia tâm lý",
+        "Tham gia liệu pháp nhận thức hành vi (CBT)",
+        "Xem xét liệu pháp nhóm",
+        "Duy trì hoạt động thể chất đều đặn",
+        "Tránh rượu bia và chất kích thích"
+      ],
+      "follow_up": "Cần tư vấn chuyên nghiệp trong 1-2 tuần"
+    },
+    "moderately_severe": {
+      "title": "Triệu chứng trầm cảm khá nặng",
+      "message": "Bạn cần được hỗ trợ chuyên nghiệp ngay lập tức. Triệu chứng của bạn có thể ảnh hưởng đáng kể đến cuộc sống.",
+      "suggestions": [
+        "Liên hệ ngay với bác sĩ tâm thần",
+        "Cân nhắc liệu pháp tâm lý + thuốc",
+        "Tham gia chương trình điều trị chuyên sâu",
+        "Xây dựng mạng lưới hỗ trợ mạnh",
+        "Tránh đưa ra quyết định quan trọng"
+      ],
+      "follow_up": "Cần gặp chuyên gia trong tuần này"
+    },
+    "severe": {
+      "title": "Triệu chứng trầm cảm nghiêm trọng",
+      "message": "Bạn đang trải qua trầm cảm nghiêm trọng. Cần can thiệp y tế ngay lập tức.",
+      "suggestions": [
+        "Liên hệ ngay với bệnh viện tâm thần",
+        "Cân nhắc điều trị nội trú",
+        "Điều trị thuốc kết hợp liệu pháp tâm lý",
+        "Đảm bảo an toàn cá nhân",
+        "Không để mình ở một mình"
+      ],
+      "follow_up": "Cần can thiệp y tế ngay hôm nay"
+    }
+  },
+  "emergency_contacts": {
+    "vietnam": {
+      "suicide_prevention_hotline": "1800-1567",
+      "mental_health_crisis": "1900-555-555",
+      "emergency_services": "115",
+      "national_mental_health_institute": "024-3823-3421"
+    },
+    "when_to_call": [
+      "Câu 9 có điểm từ 2 trở lên",
+      "Tổng điểm PHQ-9 >= 15",
+      "Có ý định tự sát cụ thể",
+      "Có kế hoạch tự làm hại bản thân"
+    ]
+  },
+  "clinical_notes": {
+    "administration_time": "5-10 phút",
+    "target_population": "Người lớn (≥18 tuổi)",
+    "screening_tool": true,
+    "diagnostic_tool": false,
+    "note": "PHQ-9 là công cụ sàng lọc, không thay thế cho chẩn đoán lâm sàng"
+  },
+  "references": {
+    "original_study": "Kroenke K, Spitzer RL, Williams JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med. 2001;16(9):606-13.",
+    "vietnamese_validation": "Nghiên cứu thích nghi văn hóa Việt Nam 2025",
+    "cutoff_points": "Các điểm cắt dựa trên nghiên cứu quốc tế và thích nghi Việt Nam"
+  },
+  "metadata": {
+    "created_date": "2025-08-27",
+    "version": "2.0",
+    "language": "Vietnamese",
+    "country": "Vietnam",
+    "developer": "SoulFriend Team",
+    "last_updated": "2025-08-27"
+  }
+}

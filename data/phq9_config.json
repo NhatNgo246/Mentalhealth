@@ -1,0 +1,128 @@
+{
+  "scale": "PHQ-9",
+  "name": "Patient Health Questionnaire-9",
+  "name_vi": "Bộ câu hỏi sức khỏe bệnh nhân PHQ-9",
+  "description": "Đánh giá mức độ trầm cảm trong 2 tuần qua",
+  "version": "1.0",
+  "language": "vi",
+  "domains": ["depression"],
+  "max_response": 3,
+  "scoring": {
+    "type": "sum",
+    "adjustment_factor": 1,
+    "total_possible": 27
+  },
+  "bands": {
+    "depression": [
+      [0, 4, "tối thiểu"],
+      [5, 9, "nhẹ"],
+      [10, 14, "vừa phải"],
+      [15, 19, "vừa nặng"],
+      [20, 27, "nặng"]
+    ]
+  },
+  "items": [
+    {
+      "id": "PHQ9_Q1",
+      "domain": "depression",
+      "text": "Ít hứng thú hoặc không vui khi làm việc",
+      "reverse": false
+    },
+    {
+      "id": "PHQ9_Q2", 
+      "domain": "depression",
+      "text": "Cảm thấy buồn chán, trầm cảm hoặc tuyệt vọng",
+      "reverse": false
+    },
+    {
+      "id": "PHQ9_Q3",
+      "domain": "depression", 
+      "text": "Khó ngủ, ngủ không yên hoặc ngủ quá nhiều",
+      "reverse": false
+    },
+    {
+      "id": "PHQ9_Q4",
+      "domain": "depression",
+      "text": "Cảm thấy mệt mỏi hoặc ít năng lượng",
+      "reverse": false
+    },
+    {
+      "id": "PHQ9_Q5",
+      "domain": "depression",
+      "text": "Ăn kém hoặc ăn quá nhiều",
+      "reverse": false
+    },
+    {
+      "id": "PHQ9_Q6",
+      "domain": "depression",
+      "text": "Cảm thấy tệ về bản thân - hoặc cảm thấy mình là kẻ thất bại hoặc đã làm hại gia đình",
+      "reverse": false
+    },
+    {
+      "id": "PHQ9_Q7",
+      "domain": "depression",
+      "text": "Khó tập trung vào việc đọc báo hoặc xem TV",
+      "reverse": false
+    },
+    {
+      "id": "PHQ9_Q8",
+      "domain": "depression",
+      "text": "Di chuyển hoặc nói chuyện chậm đến mức người khác để ý. Hoặc ngược lại - bồn chồn/khó yên đến mức di chuyển nhiều hơn bình thường",
+      "reverse": false
+    },
+    {
+      "id": "PHQ9_Q9",
+      "domain": "depression", 
+      "text": "Nghĩ rằng tốt hơn là chết đi hoặc làm hại bản thân theo cách nào đó",
+      "reverse": false,
+      "flag": "suicidal_ideation"
+    }
+  ],
+  "response_options": [
+    {
+      "value": 0,
+      "text": "Không bao giờ",
+      "text_en": "Not at all"
+    },
+    {
+      "value": 1,
+      "text": "Một vài ngày",
+      "text_en": "Several days"
+    },
+    {
+      "value": 2,
+      "text": "Hơn một nửa số ngày",
+      "text_en": "More than half the days"
+    },
+    {
+      "value": 3,
+      "text": "Gần như mọi ngày",
+      "text_en": "Nearly every day"
+    }
+  ],
+  "interpretation": {
+    "tối thiểu": {
+      "description": "Triệu chứng trầm cảm tối thiểu",
+      "recommendation": "Theo dõi và duy trì thói quen tích cực"
+    },
+    "nhẹ": {
+      "description": "Triệu chứng trầm cảm nhẹ",
+      "recommendation": "Thực hiện biện pháp tự trợ và theo dõi triệu chứng"
+    },
+    "vừa phải": {
+      "description": "Triệu chứng trầm cảm vừa phải",
+      "recommendation": "Nên tham khảo ý kiến chuyên gia tâm lý"
+    },
+    "vừa nặng": {
+      "description": "Triệu chứng trầm cảm vừa nặng", 
+      "recommendation": "Cần tham khảo ý kiến bác sĩ tâm thần"
+    },
+    "nặng": {
+      "description": "Triệu chứng trầm cảm nặng",
+      "recommendation": "Cần can thiệp y tế khẩn cấp"
+    }
+  },
+  "references": [
+    "Kroenke, K., Spitzer, R. L., & Williams, J. B. (2001). The PHQ‐9: validity of a brief depression severity measure. Journal of general internal medicine, 16(9), 606-613."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "apiVersion": "2023-07-01",
+  "type": "Microsoft.ContainerRegistry/registries",
+  "name": "[parameters('acrName')]",
+  "location": "[parameters('location')]",
+  "sku": {
+    "name": "Standard"
+  },
+  "properties": {
+    "adminUserEnabled": true
+  }
+}

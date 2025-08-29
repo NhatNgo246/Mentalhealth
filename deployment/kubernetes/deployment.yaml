@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: soulfriend
+    version: v2.0
+  name: soulfriend-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: soulfriend
+  template:
+    metadata:
+      labels:
+        app: soulfriend
+    spec:
+      containers:
+      - env:
+        - name: REDIS_URL
+          valueFrom:
+            secretKeyRef:
+              key: redis-url
+              name: app-secrets
+        image: soulfriend/app:v2.0
+        livenessProbe:
+          httpGet:
+            path: /_stcore/health
+            port: 8501
+          initialDelaySeconds: 60
+          periodSeconds: 30
+        name: soulfriend-app
+        ports:
+        - containerPort: 8501
+        readinessProbe:
+          httpGet:
+            path: /_stcore/health
+            port: 8501
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 1Gi
+          requests:
+            cpu: 500m
+            memory: 512Mi

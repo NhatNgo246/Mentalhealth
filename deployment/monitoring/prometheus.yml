@@ -1,0 +1,13 @@
+global:
+  scrape_interval: 15s
+scrape_configs:
+- job_name: soulfriend-app
+  static_configs:
+  - targets:
+    - localhost:8501
+    - localhost:8502
+    - localhost:8503
+    - localhost:8504
+    - localhost:8505
+    - localhost:8506
+    - localhost:8507

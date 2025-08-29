@@ -1,0 +1,86 @@
+{
+  "apiVersion": "2023-05-01",
+  "type": "Microsoft.App/containerApps",
+  "name": "soulfriend-v2-app",
+  "location": "[parameters('location')]",
+  "properties": {
+    "environmentId": "[resourceId('Microsoft.App/managedEnvironments', parameters('containerAppsEnvironmentName'))]",
+    "configuration": {
+      "activeRevisionsMode": "Multiple",
+      "ingress": {
+        "external": true,
+        "targetPort": 8501,
+        "transport": "http",
+        "corsPolicy": {
+          "allowedOrigins": [
+            "*"
+          ],
+          "allowedMethods": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE",
+            "OPTIONS"
+          ],
+          "allowedHeaders": [
+            "*"
+          ]
+        }
+      },
+      "secrets": [
+        {
+          "name": "redis-connection",
+          "value": "[parameters('redisConnectionString')]"
+        }
+      ]
+    },
+    "template": {
+      "containers": [
+        {
+          "name": "soulfriend-app",
+          "image": "[parameters('containerImage')]",
+          "resources": {
+            "cpu": 1.0,
+            "memory": "2Gi"
+          },
+          "env": [
+            {
+              "name": "REDIS_URL",
+              "secretRef": "redis-connection"
+            },
+            {
+              "name": "STREAMLIT_SERVER_PORT",
+              "value": "8501"
+            }
+          ]
+        }
+      ],
+      "scale": {
+        "minReplicas": 2,
+        "maxReplicas": 10,
+        "rules": [
+          {
+            "name": "cpu-scaling",
+            "custom": {
+              "type": "cpu",
+              "metadata": {
+                "type": "Utilization",
+                "value": "70"
+              }
+            }
+          },
+          {
+            "name": "memory-scaling",
+            "custom": {
+              "type": "memory",
+              "metadata": {
+                "type": "Utilization",
+                "value": "80"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

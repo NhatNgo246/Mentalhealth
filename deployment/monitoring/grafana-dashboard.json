@@ -1,0 +1,46 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "SOULFRIEND V2.0 - System Overview",
+    "tags": [
+      "soulfriend",
+      "mental-health"
+    ],
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "CPU Usage",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "rate(cpu_usage_total[5m])",
+            "legendFormat": "CPU Usage"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Memory Usage",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "memory_usage_bytes / memory_total_bytes * 100",
+            "legendFormat": "Memory Usage"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Response Time",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "http_request_duration_seconds",
+            "legendFormat": "Response Time"
+          }
+        ]
+      }
+    ]
+  }
+}

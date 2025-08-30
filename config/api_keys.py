@@ -1,19 +1,20 @@
 """
 API Keys Configuration for SOULFRIEND V3.0
-Quản lý các API keys cho các dịch vụ AI
+Quản lý các API keys cho các dịch vụ AI - Hỗ trợ Streamlit Cloud
 """
 
 import os
 from typing import Optional
+import streamlit as st
 
 class APIKeyManager:
     """Quản lý API keys cho các dịch vụ AI"""
     
     def __init__(self):
-        # Gemini AI API Key
+        # Gemini AI API Key - Priority: Streamlit secrets > hardcoded > env
         self.GEMINI_API_KEY = "AIzaSyCAX2r_vMJE7-41bpBb6MBMEyLDBkmO6BE"
         
-        # Backup from environment variables
+        # Environment variables
         self.GEMINI_API_KEY_ENV = os.getenv("GEMINI_API_KEY")
         
         # Other AI services (for future expansion)
@@ -21,7 +22,15 @@ class APIKeyManager:
         self.ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
     
     def get_gemini_key(self) -> Optional[str]:
-        """Lấy Gemini API key"""
+        """Lấy Gemini API key với priority: Streamlit secrets > hardcoded > env"""
+        # Try Streamlit secrets first (for cloud deployment)
+        try:
+            if hasattr(st, 'secrets') and 'gemini' in st.secrets and 'api_key' in st.secrets['gemini']:
+                return st.secrets['gemini']['api_key']
+        except:
+            pass
+        
+        # Fall back to hardcoded or environment
         return self.GEMINI_API_KEY or self.GEMINI_API_KEY_ENV
     
     def get_openai_key(self) -> Optional[str]:

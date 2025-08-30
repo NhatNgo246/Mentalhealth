@@ -339,13 +339,13 @@ def score_pss10_enhanced(answers: Dict[int, int], cfg: Dict) -> EnhancedAssessme
         severity_level=current_level
     )
 
-def calculate_scores(responses, questionnaire_type):
+def calculate_scores(questionnaire_type, responses):
     """
     Main scoring function - compatibility wrapper for all questionnaire types
     
     Args:
-        responses: List of response values
         questionnaire_type: String indicating questionnaire type
+        responses: List of response values
         
     Returns:
         Dict with scoring results including total_score, severity, interpretation

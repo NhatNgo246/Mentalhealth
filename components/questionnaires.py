@@ -9,7 +9,13 @@ class QuestionnaireManager:
             'PHQ-9': self.load_phq9_enhanced,
             'GAD-7': self.load_gad7_enhanced,
             'EPDS': self.load_epds_enhanced,
-            'PSS-10': self.load_pss10_enhanced
+            'PSS-10': self.load_pss10_enhanced,
+            # Add lowercase variants for compatibility
+            'dass21': self.load_dass21_enhanced,
+            'phq9': self.load_phq9_enhanced,
+            'gad7': self.load_gad7_enhanced,
+            'epds': self.load_epds_enhanced,
+            'pss10': self.load_pss10_enhanced
         }
     
     def get_questionnaire(self, name):

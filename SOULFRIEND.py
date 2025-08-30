@@ -18,7 +18,7 @@ from components.ui_advanced import (
 )
 from components.questionnaires import load_questionnaire, QuestionnaireManager
 from components.scoring import calculate_scores, score_phq9_enhanced, score_gad7_enhanced, score_dass21_enhanced, score_epds_enhanced, score_pss10_enhanced
-from components.ui import load_css, create_sidebar_navigation, app_header
+from components.ui import load_css, app_header
 from components.charts import create_charts_interface
 from components.pdf_export import generate_assessment_report
 from components.validation import validate_app_state
@@ -82,7 +82,7 @@ st.set_page_config(
     page_title="SOULFRIEND V2.0",
     page_icon="💚",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
 # 🔬 RESEARCH CONSENT SECTION (Optional & Non-blocking)
@@ -1194,12 +1194,12 @@ else:
 st.markdown("---")
 
 # Navigation and access buttons
-col1, col2, col3, col4, col5 = st.columns([1, 1, 1, 1, 1])
+col1, col2, col3 = st.columns([1, 1, 1])
 
 with col1:
     if st.button("🤖 AI Platform", key="ai_access", help="Truy cập nền tảng AI", use_container_width=True):
         try:
-            st.switch_page("pages/ai_platform.py")
+            st.switch_page("pages/03_🤖_Nền_tảng_AI.py")
         except Exception as e:
             st.error(f"Không thể mở AI Platform: {e}")
             st.info("🔧 Tính năng đang được cập nhật...")
@@ -1207,31 +1207,15 @@ with col1:
 with col2:
     if st.button("💬 Chatbot", key="chatbot_access", help="Trò chuyện với AI", use_container_width=True):
         try:
-            st.switch_page("pages/chatbot_ai.py")
+            st.switch_page("pages/04_💬_Chatbot_AI.py")
         except Exception as e:
             st.error(f"Không thể mở Chatbot: {e}")
             st.info("🔧 Tính năng đang được cập nhật...")
 
 with col3:
-    if st.button("📋 Báo cáo", key="reports_access", help="Xem báo cáo chi tiết", use_container_width=True):
+    if st.button("📋 Báo cáo cá nhân", key="reports_access", help="Xem báo cáo kết quả cá nhân của bạn", use_container_width=True):
         try:
-            st.switch_page("pages/advanced_reports.py")
-        except Exception as e:
-            st.error(f"Không thể mở trang: {e}")
-            st.info("🔧 Tính năng đang được cập nhật...")
-
-with col4:
-    if st.button("⚙️ Cấu hình", key="config_access", help="Cài đặt hệ thống", use_container_width=True):
-        try:
-            st.switch_page("pages/config_manager.py")
-        except Exception as e:
-            st.error(f"Không thể mở trang: {e}")
-            st.info("🔧 Tính năng đang được cập nhật...")
-
-with col5:
-    if st.button("🔧 Admin", key="admin_access", help="Truy cập trang quản trị", use_container_width=True):
-        try:
-            st.switch_page("pages/admin_panel.py")
+            st.switch_page("pages/02_📋_Báo_cáo_cá_nhân.py")
         except Exception as e:
             st.error(f"Không thể mở trang: {e}")
             st.info("🔧 Tính năng đang được cập nhật...")

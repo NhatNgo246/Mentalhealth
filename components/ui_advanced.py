@@ -397,7 +397,7 @@ def create_smart_mood_tracker():
             if st.button(
                 f"{mood['emoji']}\n{mood['label']}\n{button_style}", 
                 key=f"mood_{i}",
-                use_container_width=True,
+                width="stretch",
                 help=f"Bấm để chia sẻ tâm trạng: {mood['label']}"
             ):
                 selected_mood = mood
@@ -620,7 +620,7 @@ def create_consent_agreement_form():
         with col2:
             if st.button(
                 "🎯 Bắt đầu đánh giá tâm lý!", 
-                use_container_width=True,
+                width="stretch",
                 type="primary"
             ):
                 # Lưu thông tin đồng ý với timestamp
@@ -654,7 +654,7 @@ def create_consent_agreement_form():
     st.markdown("---")
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        if st.button("↩️ Quay lại trang chính", use_container_width=True):
+        if st.button("↩️ Quay lại trang chính", width="stretch"):
             # Reset consent state
             for i in range(1, 7):
                 if f"consent_{i}" in st.session_state:
@@ -913,17 +913,17 @@ def create_smart_action_buttons():
     cols = st.columns(3)
     
     with cols[0]:
-        if st.button("💬 Trò chuyện với AI", use_container_width=True, type="primary"):
+        if st.button("💬 Trò chuyện với AI", width="stretch", type="primary"):
             SmartUIExperience().track_user_interaction("click", "ai_chat_button")
             st.switch_page("pages/5_Chatbot.py")
     
     with cols[1]:
-        if st.button("📚 Tài nguyên hỗ trợ", use_container_width=True):
+        if st.button("📚 Tài nguyên hỗ trợ", width="stretch"):
             SmartUIExperience().track_user_interaction("click", "resources_button")
             st.switch_page("pages/3_Resources.py")
     
     with cols[2]:
-        if st.button("🔄 Đánh giá lại", use_container_width=True):
+        if st.button("🔄 Đánh giá lại", width="stretch"):
             SmartUIExperience().track_user_interaction("click", "retake_button")
             # Clear relevant session state
             for key in ["answers", "scores", "consent_given", "assessment_started"]:

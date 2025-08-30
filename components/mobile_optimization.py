@@ -179,23 +179,23 @@ def add_mobile_navigation():
     col1, col2, col3, col4, col5 = st.columns(5)
     
     with col1:
-        if st.button("📋", help="Đồng ý", use_container_width=True):
+        if st.button("📋", help="Đồng ý", width="stretch"):
             st.switch_page("pages/0_Consent.py")
     
     with col2:
-        if st.button("🔍", help="Đánh giá", use_container_width=True):
+        if st.button("🔍", help="Đánh giá", width="stretch"):
             st.switch_page("pages/1_Assessment.py")
     
     with col3:
-        if st.button("📊", help="Kết quả", use_container_width=True):
+        if st.button("📊", help="Kết quả", width="stretch"):
             st.switch_page("pages/2_Results.py")
     
     with col4:
-        if st.button("📚", help="Tài nguyên", use_container_width=True):
+        if st.button("📚", help="Tài nguyên", width="stretch"):
             st.switch_page("pages/3_Resources.py")
     
     with col5:
-        if st.button("💬", help="Hỗ trợ", use_container_width=True):
+        if st.button("💬", help="Hỗ trợ", width="stretch"):
             st.switch_page("pages/5_Chatbot.py")
     
     st.markdown('</div>', unsafe_allow_html=True)

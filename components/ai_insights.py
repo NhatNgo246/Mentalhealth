@@ -1,37 +1,337 @@
 """
-AI Integration Module for SOULFRIEND
-Advanced AI features for mental health assessment and support
+AI Integration Module for SOULFRIEND V3.0 - PHASE 2 INTEGRATED
+Production-ready AI engine with multi-language support and enhanced accuracy
 """
 
 import streamlit as st
 import pandas as pd
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingRegressor
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sklearn.metrics import classification_report, mean_squared_error, r2_score
-import joblib
+import asyncio
+import time
+import logging
+from typing import Dict, List, Tuple, Any, Optional
+from dataclasses import dataclass
+from enum import Enum
+import json
 import os
 from datetime import datetime, timedelta
-import plotly.express as px
-import plotly.graph_objects as go
-from typing import Dict, List, Tuple, Any
-import json
+
+# Import Phase 2 Production AI Engine
+import sys
+sys.path.append('/workspaces/Mentalhealth')
+
+try:
+    from ai_engine_phase2_production import ProductionAIEngine, UserProfile
+    PHASE2_ENGINE_AVAILABLE = True
+    print("✅ Phase 2 Production AI Engine imported successfully")
+except ImportError as e:
+    print(f"❌ Phase 2 AI Engine import failed: {e}")
+    PHASE2_ENGINE_AVAILABLE = False
+
+# Global multi-language support
+try:
+    from global_scale_engine_phase3 import GlobalScaleEngine, GlobalUser, GlobalAnalysisResult, Language, Region, ComplianceStandard
+    GLOBAL_ENGINE_AVAILABLE = True
+    print("✅ Global Scale Engine imported successfully")
+except ImportError as e:
+    print(f"⚠️ Global Scale Engine not available: {e}")
+    GLOBAL_ENGINE_AVAILABLE = False
+
+# Legacy imports for backward compatibility
+try:
+    from sklearn.ensemble import RandomForestClassifier, GradientBoostingRegressor
+    from sklearn.model_selection import train_test_split
+    from sklearn.preprocessing import StandardScaler, LabelEncoder
+    from sklearn.metrics import classification_report, mean_squared_error, r2_score
+    import joblib
+    import plotly.express as px
+    import plotly.graph_objects as go
+    SKLEARN_AVAILABLE = True
+except ImportError:
+    SKLEARN_AVAILABLE = False
+    print("⚠️ Sklearn components not available - using Phase 2 engine only")
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 class MentalHealthAI:
-    """AI engine for mental health assessment and prediction"""
+    """
+    🧠 UPGRADED AI ENGINE - SOULFRIEND V3.0 PHASE 2 INTEGRATED
+    Production-ready AI with multi-language support and enhanced accuracy
+    """
     
     def __init__(self):
-        self.risk_classifier = None
-        self.score_predictor = None
-        self.scaler = StandardScaler()
-        self.label_encoder = LabelEncoder()
-        self.models_trained = False
-        self.model_path = "/workspaces/Mentalhealth/models/"
+        # Initialize Phase 2 Production AI Engine
+        if PHASE2_ENGINE_AVAILABLE:
+            self.phase2_engine = ProductionAIEngine()
+            self.ai_mode = "PHASE2_PRODUCTION"
+            logger.info("✅ Phase 2 Production AI Engine initialized")
+        else:
+            self.ai_mode = "LEGACY_FALLBACK"
+            logger.warning("⚠️ Using legacy AI engine - Phase 2 not available")
+            
+        # Initialize Global Scale Engine if available
+        if GLOBAL_ENGINE_AVAILABLE:
+            self.global_engine = GlobalScaleEngine()
+            self.global_mode = True
+            logger.info("✅ Global Scale Engine initialized")
+        else:
+            self.global_mode = False
+            logger.info("ℹ️ Global Scale Engine not available")
+            
+        # Legacy components (backward compatibility)
+        if SKLEARN_AVAILABLE:
+            self.risk_classifier = None
+            self.score_predictor = None
+            self.scaler = StandardScaler()
+            self.label_encoder = LabelEncoder()
+            self.models_trained = False
+            self.model_path = "/workspaces/Mentalhealth/models/"
+            
+            # Ensure models directory exists
+            os.makedirs(self.model_path, exist_ok=True)
         
-        # Ensure models directory exists
-        os.makedirs(self.model_path, exist_ok=True)
+        self.last_prediction = None
+        self.prediction_history = []
+        
+    async def predict_risk_advanced(self, user_data: Dict[str, Any], language: str = "vi", region: str = "ap") -> Dict[str, Any]:
+        """
+        🎯 ADVANCED RISK PREDICTION WITH PHASE 2/3 CAPABILITIES
+        Uses Phase 2 Production AI Engine or Global Scale Engine
+        """
+        try:
+            if self.ai_mode == "PHASE2_PRODUCTION" and PHASE2_ENGINE_AVAILABLE:
+                # Use Phase 2 Production AI Engine
+                return await self._predict_with_phase2_engine(user_data)
+            elif self.global_mode and GLOBAL_ENGINE_AVAILABLE:
+                # Use Global Scale Engine
+                return await self._predict_with_global_engine(user_data, language, region)
+            else:
+                # Fallback to legacy prediction
+                return self._predict_legacy(user_data)
+                
+        except Exception as e:
+            logger.error(f"❌ Advanced prediction error: {e}")
+            return {
+                'error': f'Advanced prediction failed: {str(e)}',
+                'risk_level': 'LOW',
+                'confidence': 0.0,
+                'recommendations': ['Please consult healthcare professional'],
+                'mode': 'ERROR_FALLBACK'
+            }
     
+    async def _predict_with_phase2_engine(self, user_data: Dict[str, Any]) -> Dict[str, Any]:
+        """🧠 Use Phase 2 Production AI Engine"""
+        try:
+            # Convert user_data to UserProfile
+            user_profile = UserProfile(
+                user_id=f"user_{int(time.time())}",
+                age=int(user_data.get('age', 30)),
+                gender=user_data.get('gender', 'Female'),
+                previous_assessments=[]
+            )
+            
+            # Extract questionnaire responses
+            if 'phq9_responses' in user_data:
+                responses = user_data['phq9_responses']
+                questionnaire_type = 'PHQ9'
+            elif 'gad7_responses' in user_data:
+                responses = user_data['gad7_responses']  
+                questionnaire_type = 'GAD7'
+            else:
+                # Generate responses from scores
+                phq9_score = user_data.get('phq9_score', 0)
+                responses = self._score_to_responses(phq9_score, 9)
+                questionnaire_type = 'PHQ9'
+            
+            # Get prediction from Phase 2 engine
+            result = await self.phase2_engine.predict_risk(responses, user_profile, questionnaire_type)
+            
+            # Convert to legacy format
+            return {
+                'risk_level': result.risk_level,
+                'confidence': result.confidence_score,
+                'risk_factors': result.risk_factors,
+                'protective_factors': result.protective_factors,
+                'recommendations': result.recommendations,
+                'crisis_indicators': result.crisis_indicators,
+                'raw_score': result.raw_score,
+                'mode': 'PHASE2_PRODUCTION',
+                'engine_version': 'v3.0-production',
+                'timestamp': result.timestamp
+            }
+            
+        except Exception as e:
+            logger.error(f"❌ Phase 2 engine prediction error: {e}")
+            raise
+    
+    async def _predict_with_global_engine(self, user_data: Dict[str, Any], language: str, region: str) -> Dict[str, Any]:
+        """🌍 Use Global Scale Engine"""
+        try:
+            # Convert to GlobalUser
+            global_user = GlobalUser(
+                user_id=f"global_user_{int(time.time())}",
+                age=int(user_data.get('age', 30)),
+                gender=user_data.get('gender', 'Female'),
+                language=Language(language),
+                region=Region(region),
+                timezone="UTC+7",
+                cultural_background=language,
+                compliance_requirements=[ComplianceStandard.PDPA]
+            )
+            
+            # Extract questionnaire responses
+            if 'phq9_responses' in user_data:
+                responses = user_data['phq9_responses']
+                questionnaire_type = 'PHQ9'
+            elif 'gad7_responses' in user_data:
+                responses = user_data['gad7_responses']
+                questionnaire_type = 'GAD7'
+            else:
+                # Generate responses from scores
+                phq9_score = user_data.get('phq9_score', 0)
+                responses = self._score_to_responses(phq9_score, 9)
+                questionnaire_type = 'PHQ9'
+            
+            # Get global prediction
+            result = await self.global_engine.predict_global_risk(responses, global_user, questionnaire_type)
+            
+            # Convert to legacy format
+            return {
+                'risk_level': result.risk_level,
+                'confidence': result.confidence_score,
+                'risk_factors': result.risk_factors,
+                'protective_factors': result.protective_factors,
+                'recommendations': result.recommendations,
+                'crisis_indicators': result.crisis_indicators,
+                'raw_score': result.raw_score,
+                'cultural_adjustments': result.cultural_adjustments,
+                'compliance_flags': result.compliance_flags,
+                'mode': 'GLOBAL_SCALE',
+                'language': result.language.value,
+                'region': result.region.value,
+                'timestamp': result.timestamp
+            }
+            
+        except Exception as e:
+            logger.error(f"❌ Global engine prediction error: {e}")
+            raise
+    
+    def _score_to_responses(self, total_score: int, num_questions: int) -> List[int]:
+        """Convert total score to individual responses"""
+        if total_score == 0:
+            return [0] * num_questions
+        
+        # Distribute score across questions
+        avg_score = total_score / num_questions
+        responses = []
+        remaining_score = total_score
+        
+        for i in range(num_questions):
+            if i == num_questions - 1:
+                # Last question gets remaining score
+                responses.append(min(remaining_score, 3))
+            else:
+                # Distribute evenly with some randomness
+                score = min(int(avg_score + np.random.randint(-1, 2)), 3)
+                score = max(score, 0)
+                responses.append(score)
+                remaining_score -= score
+                
+        return responses[:num_questions]
+    
+    def predict_risk(self, user_data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        🎯 MAIN PREDICTION METHOD - SYNCHRONOUS WRAPPER
+        Auto-detects best engine and provides seamless prediction
+        """
+        try:
+            # Run async prediction
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            
+            # Determine language and region
+            language = user_data.get('language', 'vi')
+            region = user_data.get('region', 'ap')
+            
+            # Get prediction
+            result = loop.run_until_complete(
+                self.predict_risk_advanced(user_data, language, region)
+            )
+            
+            # Store prediction
+            self.last_prediction = result
+            self.prediction_history.append({
+                'timestamp': datetime.now(),
+                'prediction': result,
+                'user_data': user_data
+            })
+            
+            return result
+            
+        except Exception as e:
+            logger.error(f"❌ Main prediction error: {e}")
+            return self._predict_legacy(user_data)
+    
+    def _predict_legacy(self, user_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Legacy prediction fallback"""
+        try:
+            # Simple rule-based prediction for fallback
+            phq9_score = user_data.get('phq9_score', 0)
+            gad7_score = user_data.get('gad7_score', 0)
+            
+            # Determine risk level
+            total_score = phq9_score + gad7_score
+            if total_score >= 30:
+                risk_level = "CRITICAL"
+                confidence = 0.75
+            elif total_score >= 20:
+                risk_level = "HIGH"
+                confidence = 0.80
+            elif total_score >= 10:
+                risk_level = "MODERATE"
+                confidence = 0.85
+            elif total_score >= 5:
+                risk_level = "MILD"
+                confidence = 0.90
+            else:
+                risk_level = "LOW"
+                confidence = 0.95
+            
+            return {
+                'risk_level': risk_level,
+                'confidence': confidence,
+                'risk_factors': ['Legacy prediction - limited analysis'],
+                'protective_factors': ['Basic assessment completed'],
+                'recommendations': ['Consult healthcare professional for detailed assessment'],
+                'crisis_indicators': [],
+                'mode': 'LEGACY_FALLBACK'
+            }
+            
+        except Exception as e:
+            logger.error(f"❌ Legacy prediction error: {e}")
+            return {
+                'error': f'Prediction failed: {str(e)}',
+                'risk_level': 'LOW',
+                'confidence': 0.0,
+                'recommendations': ['Please consult healthcare professional'],
+                'mode': 'ERROR'
+            }
+    
+    def get_prediction_summary(self) -> Dict[str, Any]:
+        """Get summary of current AI capabilities"""
+        return {
+            'ai_mode': self.ai_mode,
+            'global_mode': self.global_mode,
+            'phase2_available': PHASE2_ENGINE_AVAILABLE,
+            'global_available': GLOBAL_ENGINE_AVAILABLE,
+            'sklearn_available': SKLEARN_AVAILABLE,
+            'prediction_count': len(self.prediction_history),
+            'last_prediction_time': self.prediction_history[-1]['timestamp'] if self.prediction_history else None
+        }
+    
+    # Legacy methods for backward compatibility
     def generate_training_data(self, n_samples: int = 5000) -> pd.DataFrame:
         """Generate synthetic training data for AI models"""
         np.random.seed(42)
@@ -413,7 +713,7 @@ def ai_insights_dashboard():
             gad7_score = st.number_input("GAD-7", 0, 21,
                                        value=st.session_state.get('enhanced_scores', {}).get('gad7_total', 0))
         
-        if st.button("🔮 Dự đoán rủi ro", use_container_width=True):
+        if st.button("🔮 Dự đoán rủi ro", width="stretch"):
             user_data = {
                 'age': age,
                 'gender': gender,
@@ -492,7 +792,7 @@ def ai_insights_dashboard():
                     color=risk_probs,
                     color_continuous_scale='RdYlGn_r'
                 )
-                st.plotly_chart(fig_risk, use_container_width=True)
+                st.plotly_chart(fig_risk, width="stretch")
     
     with tab2:
         st.header("🧠 Huấn luyện mô hình AI")
@@ -523,7 +823,7 @@ def ai_insights_dashboard():
             else:
                 st.warning("⚠️ Mô hình chưa được huấn luyện")
         
-        if st.button("🚀 Bắt đầu huấn luyện", use_container_width=True):
+        if st.button("🚀 Bắt đầu huấn luyện", width="stretch"):
             with st.spinner("Đang tạo dữ liệu huấn luyện..."):
                 # Generate training data
                 training_data = ai_engine.generate_training_data(n_samples)
@@ -587,7 +887,7 @@ def ai_insights_dashboard():
                 names=risk_dist.index,
                 title="Phân bố mức độ rủi ro"
             )
-            st.plotly_chart(fig_risk_dist, use_container_width=True)
+            st.plotly_chart(fig_risk_dist, width="stretch")
         
         with col2:
             # Intervention success distribution
@@ -597,7 +897,7 @@ def ai_insights_dashboard():
                 title="Phân bố khả năng can thiệp thành công",
                 nbins=20
             )
-            st.plotly_chart(fig_intervention, use_container_width=True)
+            st.plotly_chart(fig_intervention, width="stretch")
         
         # Feature importance analysis
         st.subheader("📈 Tầm quan trọng của các đặc trưng")
@@ -625,7 +925,7 @@ def ai_insights_dashboard():
                 title="Tầm quan trọng các đặc trưng trong dự đoán rủi ro"
             )
             fig_importance.update_layout(height=500)
-            st.plotly_chart(fig_importance, use_container_width=True)
+            st.plotly_chart(fig_importance, width="stretch")
         
         # Model comparison
         st.subheader("🔄 So sánh mô hình")
@@ -637,7 +937,7 @@ def ai_insights_dashboard():
             'Kích thước mô hình (MB)': [45.2, 32.1, 0.8]
         })
         
-        st.dataframe(models_comparison, use_container_width=True)
+        st.dataframe(models_comparison, width="stretch")
     
     with tab4:
         st.header("💡 Hệ thống khuyến nghị thông minh")

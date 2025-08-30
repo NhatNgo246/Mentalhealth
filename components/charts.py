@@ -293,7 +293,7 @@ def display_enhanced_charts(enhanced_result, questionnaire_type: str):
                 f"Điểm tổng {questionnaire_type}",
                 enhanced_result.get("severity_level", "Không xác định")
             )
-            st.plotly_chart(gauge_fig, use_container_width=True)
+            st.plotly_chart(gauge_fig, width="stretch")
         
         with col2:
             # Donut chart
@@ -302,7 +302,7 @@ def display_enhanced_charts(enhanced_result, questionnaire_type: str):
                 126 if questionnaire_type == "DASS-21" else 27,
                 enhanced_result.get("severity_level", "Không xác định")
             )
-            st.plotly_chart(donut_fig, use_container_width=True)
+            st.plotly_chart(donut_fig, width="stretch")
     
     with tab2:
         if enhanced_result.get('subscales') and enhanced_result.get('subscales'):
@@ -311,12 +311,12 @@ def display_enhanced_charts(enhanced_result, questionnaire_type: str):
             with col1:
                 # Bar chart
                 bar_fig = create_bar_chart(enhanced_result.get('subscales', {}))
-                st.plotly_chart(bar_fig, use_container_width=True)
+                st.plotly_chart(bar_fig, width="stretch")
             
             with col2:
                 # Radar chart
                 radar_fig = create_radar_chart(enhanced_result.get('subscales', {}))
-                st.plotly_chart(radar_fig, use_container_width=True)
+                st.plotly_chart(radar_fig, width="stretch")
         else:
             st.info("📊 Biểu đồ chi tiết chỉ khả dụng cho các questionnaire có subscales")
     
@@ -327,7 +327,7 @@ def display_enhanced_charts(enhanced_result, questionnaire_type: str):
             15.0,  # This would be real population data
             questionnaire_type
         )
-        st.plotly_chart(comparison_fig, use_container_width=True)
+        st.plotly_chart(comparison_fig, width="stretch")
         
         st.info("""
         💡 **Lưu ý**: Số liệu so sánh dựa trên nghiên cứu quốc tế. 
@@ -337,7 +337,7 @@ def display_enhanced_charts(enhanced_result, questionnaire_type: str):
     with tab4:
         # Timeline chart
         timeline_fig = create_progress_timeline()
-        st.plotly_chart(timeline_fig, use_container_width=True)
+        st.plotly_chart(timeline_fig, width="stretch")
         
         st.info("""
         📈 **Theo dõi tiến trình**: Tính năng này sẽ hiển thị kết quả thực tế 
@@ -448,7 +448,7 @@ def create_charts_interface(result_data, questionnaire_type):
             title=f"Điểm {questionnaire_type}",
             severity_level=severity
         )
-        st.plotly_chart(gauge_fig, use_container_width=True)
+        st.plotly_chart(gauge_fig, width="stretch")
         
     with col2:
         # Donut chart
@@ -457,7 +457,7 @@ def create_charts_interface(result_data, questionnaire_type):
             max_score=max_score,
             severity_level=severity
         )
-        st.plotly_chart(donut_fig, use_container_width=True)
+        st.plotly_chart(donut_fig, width="stretch")
     
     # Comparison chart
     population_avgs = {
@@ -475,7 +475,7 @@ def create_charts_interface(result_data, questionnaire_type):
         population_avg=population_avg,
         questionnaire_type=questionnaire_type
     )
-    st.plotly_chart(comparison_fig, use_container_width=True)
+    st.plotly_chart(comparison_fig, width="stretch")
     
     # Summary statistics
     st.subheader("📈 Thống Kê Tóm Tắt")
@@ -531,7 +531,7 @@ def create_charts_interface(result_data, questionnaire_type):
     
     # Progress timeline (placeholder)
     timeline_fig = create_progress_timeline()
-    st.plotly_chart(timeline_fig, use_container_width=True)
+    st.plotly_chart(timeline_fig, width="stretch")
 
 class ChartManager:
     """Chart Manager for SOULFRIEND visualizations"""

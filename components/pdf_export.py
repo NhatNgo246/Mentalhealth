@@ -349,7 +349,7 @@ def generate_pdf_report(enhanced_result, questionnaire_type: str, user_info: Dic
 def create_download_button(enhanced_result, questionnaire_type: str, user_info: Dict = None):
     """Create download button for PDF report"""
     
-    if st.button("📄 Tải báo cáo PDF", use_container_width=True, type="secondary"):
+    if st.button("📄 Tải báo cáo PDF", width="stretch", type="secondary"):
         try:
             with st.spinner("🔄 Đang tạo báo cáo PDF..."):
                 pdf_bytes = generate_pdf_report(enhanced_result, questionnaire_type, user_info)
@@ -363,7 +363,7 @@ def create_download_button(enhanced_result, questionnaire_type: str, user_info: 
                     data=pdf_bytes,
                     file_name=filename,
                     mime="application/pdf",
-                    use_container_width=True
+                    width="stretch"
                 )
                 
                 st.success("✅ Báo cáo PDF đã sẵn sàng để tải về!")

@@ -69,25 +69,25 @@ def create_enhanced_navigation():
     col1, col2, col3, col4, col5 = st.columns(5)
     
     with col1:
-        if st.button("📋 Đồng ý tham gia", use_container_width=True):
+        if st.button("📋 Đồng ý tham gia", width="stretch"):
             st.switch_page("pages/0_Consent.py")
     
     with col2:
         disabled = 'consent_given' not in st.session_state or not st.session_state.consent_given
-        if st.button("🔍 Bắt đầu đánh giá", disabled=disabled, use_container_width=True):
+        if st.button("🔍 Bắt đầu đánh giá", disabled=disabled, width="stretch"):
             st.switch_page("pages/1_Assessment.py")
     
     with col3:
         disabled = 'enhanced_scores' not in st.session_state or not st.session_state.enhanced_scores
-        if st.button("📊 Xem kết quả", disabled=disabled, use_container_width=True):
+        if st.button("📊 Xem kết quả", disabled=disabled, width="stretch"):
             st.switch_page("pages/2_Results.py")
     
     with col4:
-        if st.button("📚 Tài nguyên", use_container_width=True):
+        if st.button("📚 Tài nguyên", width="stretch"):
             st.switch_page("pages/3_Resources.py")
     
     with col5:
-        if st.button("💬 Hỗ trợ AI", use_container_width=True):
+        if st.button("💬 Hỗ trợ AI", width="stretch"):
             st.switch_page("pages/5_Chatbot.py")
     
     # Progress indicator

@@ -4,7 +4,7 @@
       "password_hash": "c64f2d4fabe30f3d9ba0e5802f33f33e484311ac3738cb96fc97ff9cf06af4f9",
       "role": "super_admin",
       "created": "2025-08-27T19:23:31.545075",
-      "last_login": "2025-08-28T07:15:40.135899",
+      "last_login": "2025-08-30T10:30:59.332517",
       "failed_attempts": 0,
       "locked_until": null,
       "permissions": [
@@ -15,7 +15,7 @@
       "password_hash": "81e597e5d590cb735719011ab7878a541b2ebacbbaaabfb3fa04096b917130e8",
       "role": "medical_admin",
       "created": "2025-08-27T19:23:31.595302",
-      "last_login": null,
+      "last_login": "2025-08-30T10:18:20.243569",
       "failed_attempts": 0,
       "locked_until": null,
       "permissions": [
@@ -28,7 +28,7 @@
       "password_hash": "6aac79b1df02ae23e7516a66254fed4b3f29e9f4692ebaab36d1f9bb03d55903",
       "role": "data_analyst",
       "created": "2025-08-27T19:23:31.655166",
-      "last_login": null,
+      "last_login": "2025-08-30T10:18:53.877553",
       "failed_attempts": 0,
       "locked_until": null,
       "permissions": [
@@ -56,6 +56,62 @@
     },
     {
       "timestamp": "2025-08-28T07:15:40.139630",
+      "event_type": "login_success",
+      "username": "admin",
+      "details": "Successful login",
+      "ip_address": "localhost",
+      "user_agent": "Streamlit"
+    },
+    {
+      "timestamp": "2025-08-30T10:18:20.244015",
+      "event_type": "login_success",
+      "username": "doctor",
+      "details": "Successful login",
+      "ip_address": "localhost",
+      "user_agent": "Streamlit"
+    },
+    {
+      "timestamp": "2025-08-30T10:18:35.670157",
+      "event_type": "logout",
+      "username": "doctor",
+      "details": "User logout",
+      "ip_address": "localhost",
+      "user_agent": "Streamlit"
+    },
+    {
+      "timestamp": "2025-08-30T10:18:53.878087",
+      "event_type": "login_success",
+      "username": "analyst",
+      "details": "Successful login",
+      "ip_address": "localhost",
+      "user_agent": "Streamlit"
+    },
+    {
+      "timestamp": "2025-08-30T10:19:03.445669",
+      "event_type": "logout",
+      "username": "analyst",
+      "details": "User logout",
+      "ip_address": "localhost",
+      "user_agent": "Streamlit"
+    },
+    {
+      "timestamp": "2025-08-30T10:19:21.804027",
+      "event_type": "login_success",
+      "username": "admin",
+      "details": "Successful login",
+      "ip_address": "localhost",
+      "user_agent": "Streamlit"
+    },
+    {
+      "timestamp": "2025-08-30T10:29:03.968847",
+      "event_type": "login_success",
+      "username": "admin",
+      "details": "Successful login",
+      "ip_address": "localhost",
+      "user_agent": "Streamlit"
+    },
+    {
+      "timestamp": "2025-08-30T10:30:59.333061",
       "event_type": "login_success",
       "username": "admin",
       "details": "Successful login",

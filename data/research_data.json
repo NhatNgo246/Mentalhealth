@@ -1,0 +1,127 @@
+[
+  {
+    "timestamp": "2025-08-30T10:00:00Z",
+    "session_id": "sess_001",
+    "event_type": "session_started",
+    "consent_given": true,
+    "user_info": {
+      "type": "anonymous",
+      "age_group": "25-34",
+      "location": "Ho Chi Minh City"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T10:01:00Z",
+    "session_id": "sess_001",
+    "event_type": "questionnaire_started",
+    "questionnaire_type": "PHQ-9"
+  },
+  {
+    "timestamp": "2025-08-30T10:05:30Z",
+    "session_id": "sess_001",
+    "event_type": "questionnaire_completed",
+    "questionnaire_type": "PHQ-9",
+    "total_score": 12,
+    "completion_time_seconds": 270
+  },
+  {
+    "timestamp": "2025-08-30T10:06:00Z",
+    "session_id": "sess_001",
+    "event_type": "questionnaire_started",
+    "questionnaire_type": "GAD-7"
+  },
+  {
+    "timestamp": "2025-08-30T10:09:15Z",
+    "session_id": "sess_001",
+    "event_type": "questionnaire_completed",
+    "questionnaire_type": "GAD-7",
+    "total_score": 8,
+    "completion_time_seconds": 195
+  },
+  {
+    "timestamp": "2025-08-30T09:30:00Z",
+    "session_id": "sess_002",
+    "event_type": "session_started",
+    "consent_given": false,
+    "user_info": {
+      "type": "anonymous",
+      "age_group": "35-44",
+      "location": "Hanoi"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T08:45:00Z",
+    "session_id": "sess_003",
+    "event_type": "session_started",
+    "consent_given": true,
+    "user_info": {
+      "type": "anonymous",
+      "age_group": "18-24",
+      "location": "Da Nang"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T08:46:00Z",
+    "session_id": "sess_003",
+    "event_type": "questionnaire_started",
+    "questionnaire_type": "DASS-21"
+  },
+  {
+    "timestamp": "2025-08-30T08:58:45Z",
+    "session_id": "sess_003",
+    "event_type": "questionnaire_completed",
+    "questionnaire_type": "DASS-21",
+    "total_score": 35,
+    "completion_time_seconds": 765
+  },
+  {
+    "timestamp": "2025-08-30T11:15:00Z",
+    "session_id": "sess_004",
+    "event_type": "session_started",
+    "consent_given": true,
+    "user_info": {
+      "type": "anonymous",
+      "age_group": "45-54",
+      "location": "Can Tho"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T11:16:00Z",
+    "session_id": "sess_004",
+    "event_type": "questionnaire_started",
+    "questionnaire_type": "EPDS"
+  },
+  {
+    "timestamp": "2025-08-30T11:22:30Z",
+    "session_id": "sess_004",
+    "event_type": "questionnaire_completed",
+    "questionnaire_type": "EPDS",
+    "total_score": 6,
+    "completion_time_seconds": 390
+  },
+  {
+    "timestamp": "2025-08-30T12:00:00Z",
+    "session_id": "sess_005",
+    "event_type": "session_started",
+    "consent_given": true,
+    "user_info": {
+      "type": "anonymous",
+      "age_group": "25-34",
+      "location": "Ho Chi Minh City"
+    }
+  },
+  {
+    "timestamp": "2025-08-30T12:01:00Z",
+    "session_id": "sess_005",
+    "event_type": "questionnaire_started",
+    "questionnaire_type": "PSS-10"
+  },
+  {
+    "timestamp": "2025-08-30T12:07:45Z",
+    "session_id": "sess_005",
+    "event_type": "questionnaire_completed",
+    "questionnaire_type": "PSS-10",
+    "total_score": 18,
+    "completion_time_seconds": 405
+  }
+]

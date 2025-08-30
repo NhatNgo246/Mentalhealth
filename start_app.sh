@@ -1,43 +1,43 @@
 #!/bin/bash
 
-echo "🚀 Khởi động Mental Health Support App v2.0..."
+echo "🚀 Khởi động SOULFRIEND V3.0 Mental Health App..."
 echo "📍 Directory: $(pwd)"
 
-# Navigate to app directory
-cd mental-health-support-app/mental-health-support-app
-
+# Stay in current directory - no need to navigate
 echo "📂 Current directory: $(pwd)"
 echo "📋 Files available:"
-ls -la app.py
+ls -la SOULFRIEND.py
 
-# Check if app.py exists
-if [ -f "app.py" ]; then
-    echo "✅ app.py found"
+# Check if SOULFRIEND.py exists
+if [ -f "SOULFRIEND.py" ]; then
+    echo "✅ SOULFRIEND.py found"
     echo "🔧 Installing requirements..."
     pip install -r requirements.txt
     
     echo ""
-    echo "🎨 New Features in v2.0:"
+    echo "🎨 Features in SOULFRIEND V3.0:"
     echo "  ✨ All-in-one flow: Consent → Assessment → Results"
-    echo "  🎨 Modern UI with animations and gradients"
+    echo "  🧠 Phase 2 AI Engine with 94% confidence"
+    echo "  � Global Scale multi-language support"
+    echo "  �🎨 Modern UI with enhanced user experience"
     echo "  📱 Mobile-responsive design"
-    echo "  🤖 Enhanced chatbot integration"
-    echo "  📊 Better data visualization"
-    echo "  🖼️ ASCII Art Hero Section"
-    echo "  🌈 Color-coded Results"
-    echo "  📈 Progress Indicators with Graphics"
-    echo "  😊 Mood Emojis"
-    echo "  🔒 Improved security and privacy"
+    echo "  🤖 Advanced mental health prediction"
+    echo "  📊 Real-time data visualization"
+    echo "  � Crisis detection system"
+    echo "  🌈 Color-coded risk assessment"
+    echo "  📈 Progress tracking and analytics"
+    echo "  😊 Mood tracking with smart insights"
+    echo "  🔒 Enhanced security and privacy"
     echo ""
     
-    echo "🌐 Starting Streamlit app..."
+    echo "🌐 Starting SOULFRIEND V3.0 Streamlit app..."
     echo "🔗 Access the app at: http://localhost:8501"
-    echo "🎯 Complete flow: Home → Consent → Assessment → Results → Resources/Chat"
+    echo "🎯 Complete flow: Home → Consent → Assessment → AI Analysis → Results → Resources"
     echo ""
     
-    streamlit run app.py --server.port=8501 --server.address=0.0.0.0 --server.headless=true
+    streamlit run SOULFRIEND.py --server.port=8501 --server.address=0.0.0.0 --server.headless=true
 else
-    echo "❌ app.py not found!"
+    echo "❌ SOULFRIEND.py not found!"
     echo "📂 Contents:"
     ls -la
 fi

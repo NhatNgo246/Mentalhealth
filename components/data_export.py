@@ -172,7 +172,7 @@ def display_export_options():
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        if st.button("📄 Xuất PDF", use_container_width=True):
+        if st.button("📄 Xuất PDF", width="stretch"):
             try:
                 if REPORTLAB_AVAILABLE:
                     pdf_data = export_system.create_assessment_pdf(assessment_data)
@@ -188,7 +188,7 @@ def display_export_options():
                 st.error(f"Error creating PDF: {e}")
     
     with col2:
-        if st.button("📊 Xuất JSON", use_container_width=True):
+        if st.button("📊 Xuất JSON", width="stretch"):
             try:
                 json_data = export_system.create_json_export(assessment_data)
                 st.download_button(
@@ -201,7 +201,7 @@ def display_export_options():
                 st.error(f"Error creating JSON: {e}")
     
     with col3:
-        if st.button("📈 Xuất CSV", use_container_width=True):
+        if st.button("📈 Xuất CSV", width="stretch"):
             try:
                 csv_data = export_system.create_csv_export(assessment_data)
                 st.download_button(

@@ -1272,6 +1272,6 @@ except Exception:
 st.markdown("---")
 st.markdown("""
 <div style="text-align: center; color: #6c757d; font-size: 0.9rem;">
-    💚 <strong>SOULFRIEND V2.0</strong> | AI-Powered Mental Health Platform | © 2025
+    💚 <strong>SOULFRIEND V2.0</strong> | 0938.02.1111 - CHUN
 </div>
 """, unsafe_allow_html=True)
